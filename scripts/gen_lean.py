@@ -49,7 +49,7 @@ set_option linter.unusedVariables false
 INDEX_HEADER = """# Lean witness files, one per table
 
 All 31 files compile. Each was run through `lake env lean` against Lean 4.29.1, the
-version pinned by the project's `lean-toolchain`: 31 passed, 0 failed, 423.4 s total.
+version pinned by the project's `lean-toolchain`: 31 of 31 passed; 384 s and 423 s on two independent runs (about 6.5 to 7 minutes for the set) total.
 Per-file exit codes and wall times are in
 [`../data/lean_compile_check.json`](../data/lean_compile_check.json), produced by
 [`check_lean_compile.py`](../scripts/check_lean_compile.py).

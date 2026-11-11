@@ -183,7 +183,7 @@ upstream annotation.
 | Result | Value |
 |---|---|
 | files | 31 |
-| compiled with `lake env lean`, Lean 4.29.1 | 31 passed, 0 failed, 423.4 s |
+| compiled with `lake env lean`, Lean 4.29.1 | 31 of 31 passed; 384 s and 423 s on two independent runs (about 6.5 to 7 minutes) |
 | structure checked independently | 31 passed, 0 failed |
 
 Compilation is a **separate** evidence line from the mathematics. The mathematics is

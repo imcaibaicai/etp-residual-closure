@@ -113,7 +113,7 @@ This is the part to read before believing anything above.
 |---|---|---|
 | 264/264 pairs have a witness | measured | `data/witnesses_264.json` |
 | Three independent evaluators agree on all 264, including the refuting assignment | measured, 0 conflicts | `data/verification_264.json` |
-| 31 Lean witness files compile under Lean 4.29.1 | **measured: 31 passed, 0 failed, 423.4 s** via `lake env lean` | `data/lean_compile_check.json` |
+| 31 Lean witness files compile under Lean 4.29.1 | **measured: 31 of 31 passed**, about 6.5 to 7 minutes for the whole set (two independent runs: 384 s and 423 s; 10 to 22 s per file) | `data/lean_compile_check.json` |
 | Full `lake build` of the ETP project | **not run** | — |
 | CI | **not run** | — |
 | Maintainer review | **not done** | — |

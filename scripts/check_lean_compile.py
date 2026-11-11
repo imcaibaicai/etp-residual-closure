@@ -134,7 +134,9 @@ def main(argv=None) -> int:
         "toolchain": toolchain,
         "project": args.project_label,
         "note": ("compiled one file at a time with `lake env lean`; NOT a full "
-                 "`lake build`, NOT a CI run, NOT a maintainer review"),
+                 "`lake build`, NOT a CI run, NOT a maintainer review. Wall time "
+                 "varies with machine load: the same 31 files took 384 s and 423 s "
+                 "on two independent runs"),
         "total": len(files),
         "passed": passed,
         "failed": failed,

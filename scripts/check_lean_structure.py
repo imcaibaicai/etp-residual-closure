@@ -2,7 +2,7 @@
 """Structural check of the generated Lean files.
 
 编译是**另一条独立证据**，在 ``lean/`` 下 31 个文件上做过：Lean 4.29.1、
-``lake env lean`` 逐个编译，31/31 通过、423.4 秒，记录在
+``lake env lean`` 逐个编译，31/31 通过（两次独立测量：384 秒与 423 秒），记录在
 ``data/lean_compile_check.json``，由 ``scripts/check_lean_compile.py`` 复现。
 前提是先定向构建这些文件 import 的模块；全新检出里只有依赖包的 olean，没有
 ``equational_theories`` 的，直接编译会报 ``unknown module prefix``。
@@ -128,7 +128,7 @@ def main():
                     "def names unique", "«» balanced", "file ends with a term"],
         "not_checked": [
             "compilation: checked separately, by `lake env lean` against Lean 4.29.1 "
-            "(data/lean_compile_check.json: 31 passed, 0 failed, 423.4 s). This "
+            "(data/lean_compile_check.json: 31 passed, 0 failed; 384 s and 423 s on two runs). This "
             "script reads the files as text and compiles nothing",
             "a full `lake build` of the ETP project, and its CI",
             "proof terms: `by decideFin!` is read as text here, never elaborated",

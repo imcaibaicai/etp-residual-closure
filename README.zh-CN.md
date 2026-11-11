@@ -113,7 +113,7 @@ covered: 264/264 target pairs (100.0%)
 |---|---|---|
 | 264/264 对都有见证 | 实测 | `data/witnesses_264.json` |
 | 三个独立求值器对全部 264 对一致（含反驳赋值） | 实测，0 冲突 | `data/verification_264.json` |
-| 31 个 Lean 见证文件在 Lean 4.29.1 下编译通过 | **实测：31 通过、0 失败、423.4 秒**，走 `lake env lean` | `data/lean_compile_check.json` |
+| 31 个 Lean 见证文件在 Lean 4.29.1 下编译通过 | **实测：31/31 通过**，整套约 6.5～7 分钟（两次独立测量：384 秒与 423 秒；单文件 10～22 秒） | `data/lean_compile_check.json` |
 | 全量 `lake build` | **没跑** | — |
 | CI | **没跑** | — |
 | 维护者审查 | **没有** | — |

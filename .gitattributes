@@ -1,0 +1,15 @@
+# Line endings are pinned to LF for every text file.
+#
+# Why this matters here: CHECKSUMS.txt records the sha256 of each file's bytes. If a
+# clone rewrites line endings (Windows with core.autocrlf=true rewrites LF to CRLF on
+# checkout), every hash changes and scripts/selfcheck.py reports hash mismatches on a
+# repository nobody has modified. Pinning eol=lf makes the checkout byte-identical on
+# every platform, so the checksum gate means the same thing everywhere.
+* text=auto eol=lf
+
+# Files that must not be touched by the text filter.
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+*.zip binary

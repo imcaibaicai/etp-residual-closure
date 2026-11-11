@@ -28,7 +28,7 @@ location and in the method.
 
 | Claim | Status |
 |---|---|
-| 31 witness files compile individually under Lean 4.29.1 via `lake env lean` | **measured**: 31/31, 423.4 s total, per-file exit codes recorded |
+| 31 witness files compile individually under Lean 4.29.1 via `lake env lean` | **measured**: 31/31, about 6.5 to 7 minutes for the whole set (384 s and 423 s on two runs), per-file exit codes recorded |
 | A full `lake build` of the ETP project was run | **no** |
 | The project's CI was run | **no** |
 | A maintainer reviewed these files | **no** |
@@ -121,8 +121,8 @@ different set of laws, and its counts will not match these — and neither will 
 
 ## 10. What is runtime-dependent
 
-The 2.3 s and 63 s figures are single-machine wall times and will vary. The 423.4 s
-Lean compile total likewise. Treat all timings as order-of-magnitude, and the counts
+The 2.3 s and 63 s figures are single-machine wall times and will vary, as does the
+Lean compile total: 384 s and 423 s on two runs of the same 31-file set. Treat all timings as order-of-magnitude, and the counts
 as exact.
 
 ## 11. What would have to happen to become an ETP contribution

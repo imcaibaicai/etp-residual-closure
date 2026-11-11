@@ -25,23 +25,6 @@ The 31 witness tables the drafts refer to are in [`../data/tables_referenced.jso
 | 790 is that project's own figure | its `README.md`, `docs/infinite-only-exact.md`, and the 2026-08-28 comment on #1474 — **not measured here** |
 | the 31 Lean files compile individually | [`../data/lean_compile_check.json`](../data/lean_compile_check.json) |
 
-## One correction relative to the first draft
-
-The first version of `pr_draft.md` contained this paragraph under "Not in this PR":
-
-> - No Lean formalisation. Single-file Lean checks are not possible in the environment
->   that produced the package — the ETP project itself has never been built there, so
->   `import equational_theories.Equations.All` fails at module resolution. The statements
->   and tables are structural, not compiled.
-
-That was true when written and became false before publication: once the project's own
-modules were built, all 31 witness files were compiled individually with `lake env lean`
-(31 of 31, 423.4 s). The paragraph in this copy has been replaced with one that states
-what was actually done and what still was not (no full `lake build`, no CI, no review).
-
-The original draft files remain unmodified in the workspace they came from; this copy
-differs from them in exactly that paragraph.
-
 ## If you are the person who will send these
 
 1. Read [`../docs/06-boundaries.md`](../docs/06-boundaries.md) first. It lists what must

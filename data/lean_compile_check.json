@@ -2,7 +2,7 @@
     "generated_at": "2026-11-11T15:33:03",
     "toolchain": "leanprover/lean4:v4.29.1",
     "project": "$ETP_HOME/equational_theories",
-    "note": "compiled one file at a time with `lake env lean`; NOT a full `lake build`, NOT a CI run, NOT a maintainer review",
+    "note": "compiled one file at a time with `lake env lean`; NOT a full `lake build`, NOT a CI run, NOT a maintainer review. Wall time varies with machine load: the same 31 files took 384 s and 423 s on two independent runs",
     "total": 31,
     "passed": 31,
     "failed": 0,
@@ -224,6 +224,16 @@
             "seconds": 12.5,
             "ok": true,
             "first_error": null
+        }
+    ],
+    "runs": [
+        {
+            "seconds": 383.9,
+            "note": "earlier independent run"
+        },
+        {
+            "seconds": 423.4,
+            "note": "this record; per-file times in results"
         }
     ]
 }

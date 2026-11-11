@@ -90,7 +90,7 @@ witness has been re-verified by a third implementation
 
 - No file added to ETP's `Generated/` tree, and no claim that any was. Separately, the
   31 witness tables were written in that project's idiom and each compiles
-  individually under Lean 4.29.1 via `lake env lean` — 31 of 31, 423.4 s total, per-file
+  individually under Lean 4.29.1 via `lake env lean` — 31 of 31, about 6.5 to 7 minutes for the set (384 s and 423 s on two runs), per-file
   record in `data/lean_compile_check.json` — after a targeted build of the modules they
   import. That is not a full `lake build` and not a CI run; adding them upstream would
   require both, plus maintainer review.

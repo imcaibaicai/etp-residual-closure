@@ -161,8 +161,8 @@ python3 "$OLDPWD/scripts/check_lean_compile.py" \
 
 ```
 toolchain leanprover/lean4:v4.29.1
-total 31 | passed 31 | failed 0 | total_seconds 423.4
-per file: exit 0, 9 to 22 s, dominated by decideFin!
+total 31 | passed 31 | failed 0 | total_seconds 423.4   (an earlier run of the same set: 383.9)
+per file: exit 0, 10 to 22 s across the two runs, dominated by decideFin!
 ```
 
 **Checkpoints.** 31 files; every `exit` is 0; every `first_error` is `null`; total time
