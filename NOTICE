@@ -7,6 +7,12 @@ This repository mixes three kinds of material. They do not share one licence.
 1. OUR OWN WORK — MIT
 ----------------------
 
+LICENSE holds the standard MIT text, unmodified, with nothing appended: an
+appended paragraph stops GitHub's licence detection from recognising the file, and a
+repository whose sidebar says "no licence" is worse than one whose scope notes are
+one file further along. Everything about scope and third-party material is stated
+here instead.
+
 Covered by LICENSE (MIT), copyright 2026 The etp-residual-closure contributors:
 
   - every file under scripts/ that is not listed in section 2 below

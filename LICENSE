@@ -19,18 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-This licence covers the code and prose authored in this repository.
-
-It does NOT cover the third-party data vendored under data/tables_referenced.json
-and reproduced in lean/: the table text originates from the Equational Theories
-Project (teorth/equational_theories) and is Apache-2.0. The 264-pair target list
-originates from carlok/parsimagma and is Apache-2.0. See NOTICE for the per-file
-provenance statement, and the upstream repositories for the full licence texts:
-
-  https://github.com/teorth/equational_theories/blob/main/LICENSE
-  https://github.com/carlok/parsimagma/blob/main/LICENSE
-
-Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0
