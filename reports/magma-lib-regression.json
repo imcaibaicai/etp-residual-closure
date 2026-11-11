@@ -1,0 +1,60 @@
+{
+  "generated_by": "scripts/selftest_regression.py",
+  "elapsed_seconds": 53.7,
+  "checks": [
+    {
+      "check": "A 示例表应当满足对应律",
+      "file": "$ETP_HOME/parsimagma/data/etp/smallest_magma_examples.txt",
+      "unit": "表×律",
+      "total": 3198,
+      "agree": 3198,
+      "disagree": 0,
+      "failures": []
+    },
+    {
+      "check": "B refutations2x2.txt: 满足集 == Proves 列表",
+      "file": "$ETP_HOME/parsimagma/data/etp/refutations2x2.txt",
+      "unit": "表×律",
+      "tables": 10,
+      "pairs": 6663,
+      "law_checks": 46940,
+      "agree": 6663,
+      "disagree": 0,
+      "failures": []
+    },
+    {
+      "check": "B refutations3x3.txt: 满足集 == Proves 列表",
+      "file": "$ETP_HOME/parsimagma/data/etp/refutations3x3.txt",
+      "unit": "表×律",
+      "tables": 299,
+      "pairs": 30089,
+      "law_checks": 1403506,
+      "agree": 30089,
+      "disagree": 0,
+      "failures": []
+    },
+    {
+      "check": "B refutations4x4.txt: 满足集 == Proves 列表",
+      "file": "$ETP_HOME/parsimagma/data/etp/refutations4x4.txt",
+      "unit": "表×律",
+      "tables": 515,
+      "pairs": 43872,
+      "law_checks": 2417410,
+      "agree": 43872,
+      "disagree": 0,
+      "failures": []
+    },
+    {
+      "check": "C 最小阶数与穷举一致（≥5 阶需穷举 4 阶，跳过）",
+      "file": "$ETP_HOME/parsimagma/data/etp/smallest_magma.txt",
+      "unit": "律",
+      "checked": 3182,
+      "skipped_needs_order4_bruteforce": 16,
+      "agree": 3182,
+      "disagree": 0,
+      "failures": []
+    }
+  ],
+  "all_agree": true,
+  "total_judgements": 3874236
+}

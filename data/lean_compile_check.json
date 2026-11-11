@@ -1,0 +1,229 @@
+{
+    "generated_at": "2026-11-11T15:33:03",
+    "toolchain": "leanprover/lean4:v4.29.1",
+    "project": "$ETP_HOME/equational_theories",
+    "note": "compiled one file at a time with `lake env lean`; NOT a full `lake build`, NOT a CI run, NOT a maintainer review",
+    "total": 31,
+    "passed": 31,
+    "failed": 0,
+    "total_seconds": 423.4,
+    "results": [
+        {
+            "file": "Witness_Refutation36.lean",
+            "exit": 0,
+            "seconds": 20.2,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation870.lean",
+            "exit": 0,
+            "seconds": 11.9,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation889.lean",
+            "exit": 0,
+            "seconds": 10.2,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation895.lean",
+            "exit": 0,
+            "seconds": 10.4,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation899.lean",
+            "exit": 0,
+            "seconds": 14.3,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation913.lean",
+            "exit": 0,
+            "seconds": 11.3,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation923.lean",
+            "exit": 0,
+            "seconds": 10.9,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation924.lean",
+            "exit": 0,
+            "seconds": 10.2,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation924T.lean",
+            "exit": 0,
+            "seconds": 10.1,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation929.lean",
+            "exit": 0,
+            "seconds": 10.3,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation929T.lean",
+            "exit": 0,
+            "seconds": 12.8,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation930.lean",
+            "exit": 0,
+            "seconds": 9.4,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation930T.lean",
+            "exit": 0,
+            "seconds": 14.3,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation931.lean",
+            "exit": 0,
+            "seconds": 9.9,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation931T.lean",
+            "exit": 0,
+            "seconds": 10.3,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation932.lean",
+            "exit": 0,
+            "seconds": 12.0,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation932T.lean",
+            "exit": 0,
+            "seconds": 12.1,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation933.lean",
+            "exit": 0,
+            "seconds": 10.5,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation933T.lean",
+            "exit": 0,
+            "seconds": 20.0,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation934.lean",
+            "exit": 0,
+            "seconds": 19.4,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation934T.lean",
+            "exit": 0,
+            "seconds": 22.3,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation935.lean",
+            "exit": 0,
+            "seconds": 13.3,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation935T.lean",
+            "exit": 0,
+            "seconds": 16.8,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation936.lean",
+            "exit": 0,
+            "seconds": 16.1,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation936T.lean",
+            "exit": 0,
+            "seconds": 15.1,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation937.lean",
+            "exit": 0,
+            "seconds": 16.7,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation937T.lean",
+            "exit": 0,
+            "seconds": 12.6,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation938.lean",
+            "exit": 0,
+            "seconds": 17.0,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation938T.lean",
+            "exit": 0,
+            "seconds": 18.2,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation939.lean",
+            "exit": 0,
+            "seconds": 12.3,
+            "ok": true,
+            "first_error": null
+        },
+        {
+            "file": "Witness_Refutation939T.lean",
+            "exit": 0,
+            "seconds": 12.5,
+            "ok": true,
+            "first_error": null
+        }
+    ]
+}

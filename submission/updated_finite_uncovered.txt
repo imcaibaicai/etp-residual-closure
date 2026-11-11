@@ -1,0 +1,48 @@
+# Pairs with a finite counterexample (per ETP's finite implication graph,
+# teorth.github.io/equational_theories/implications/finite_graph.json) that no
+# construction in this corpus reaches.
+#
+# Replacement suggestion. The previous revision of this file listed 264 pairs
+# (39 in the 1062, 225 in the 814). All 264 now have an explicit finite witness
+# drawn from the ETP's own published tables, so the list is empty.
+#
+# Evidence, reproducible:
+#   python3 reverse_index.py \
+#     --base <etp>/equational_theories/Generated/All4x4Tables \
+#     --targets <this file at its previous revision> \
+#     --laws all --selfcheck
+#   -> covered: 264/264, 240 with a non-transposed witness, 24 transpose-only
+#
+# What changed is indexing, not search:
+#   - each table is indexed by the set of laws it satisfies, not by the pair it
+#     was generated for. 206 of the 264 pairs are separated by a published table
+#     whose own Facts line does not mention them.
+#   - every table's transpose is added to the corpus. 24 of the 264 are
+#     witnessed only that way.
+#   - the 946 parseable tables in Generated/All4x4Tables already contain every
+#     witness; no new magma had to be constructed, and no extension family had
+#     to be run.
+#
+# Two-site accounting, measured on the ETP's finite implication graph:
+#   1062 side: 610 infinite-only, 450 finitely refutable, 2 open
+#              ((677,255) and (2910,47); value "unknown" in finite_graph.json)
+#   814 side:  604 finitely refutable of 814
+#   total finitely refutable: 1054
+#   covered by the published ETP tables + transposes: 940
+#   covered by this repository's corpus: 790
+#   covered by the union: 1054
+#
+# The 114 pairs that the published tables miss are listed in
+# reports/submission/coverage_arithmetic.json and are not the same 264 pairs;
+# they are the part of this repository's 790 that no published table separates.
+# Regenerating a combined index is what closes the gap in both directions.
+#
+# This file was already inaccurate before any of the above. 16 of the 39 pairs
+# it lists for the 1062 side are closed by src/ext.rs (docs/the-39.md, lines
+# 147-162) and it was not regenerated afterwards, so it mixed pairs closed by
+# two different mechanisms even without this work. The header comment said
+# "fetched 2026-08-28", which dates the graph, not the derivation.
+#
+# Suggested next header, if this file is kept as a generated artifact:
+#   # Regenerate with `pm coverage` after any corpus change; do not hand-edit.
+# set	from	to

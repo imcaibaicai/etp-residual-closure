@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use the indexing result or the agent playbook, cite this repository. If you use the tables or the law list, cite the upstream projects as well."
+title: "etp-residual-closure: closing 264 residual implications with already-published tables, and a playbook for AI agents"
+abstract: >-
+  264 implications that the Equational Theories Project proves finitely refutable
+  but that carlok/parsimagma's construction corpus does not reach are all closed
+  using ETP's own published Generated/All4x4Tables directory. 31 tables suffice;
+  one 9-element table separates 137 of the 264. 206 of the 264 are separated by
+  tables whose own Facts annotation never mentions them, which locates the defect
+  in the index rather than in the search. Includes the reverse-index tool, three
+  independent evaluators, per-pair witnesses with refuting assignments, and an
+  operating manual for AI agents doing comparable corpus-alignment work.
+type: software
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-11"
+keywords:
+  - equational theories
+  - magma
+  - finite counterexample
+  - reverse index
+  - corpus alignment
+  - AI agent methodology
+  - Lean 4
+references:
+  - type: software
+    title: "Equational Theories Project (tables, equations.txt, finite graph artifacts)"
+    authors:
+      - name: "The Equational Theories Project"
+    repository-code: "https://github.com/teorth/equational_theories"
+    license: Apache-2.0
+  - type: software
+    title: "parsimagma (264-pair residual list, affine extension parameters)"
+    authors:
+      - name: "carlok"
+    repository-code: "https://github.com/carlok/parsimagma"
+    license: Apache-2.0

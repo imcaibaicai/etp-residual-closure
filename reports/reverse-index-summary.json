@@ -1,0 +1,7 @@
+{
+ "target_pairs": 264,
+ "covered": 264,
+ "uncovered": [],
+ "direct_witness": 240,
+ "transpose_only": 24
+}

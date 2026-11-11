@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Run artifacts of scripts/reverse_index.py and friends
+out/
+reverse_index_out/
+*.cnf
+# Logs are ignored only where the scripts write them. A bare `*.log` would also
+# silently ignore a log someone deliberately placed under reports/ or data/.
+out/**/*.log
+reverse_index_out/**/*.log
+
+# Belt and braces: scripts/scan_sensitive.py reads no deny file by design (see
+# its header). These patterns exist so that a deny file created out of habit
+# cannot be committed by a blanket `git add -A`.
+.deny.txt
+deny.txt
+*.deny.txt
+
+# Large upstream artifacts — fetched by scripts/fetch_etp_data.py, never committed
+graph.json
+finite_graph.json
+*.bits.gz
+*.ltar
+etp-data/
+cache/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environments
+.env
+*.local

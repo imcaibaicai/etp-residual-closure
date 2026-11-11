@@ -1,0 +1,114 @@
+# All 264 pairs in `finite_uncovered.txt` have witnesses in the ETP's published tables
+
+`data/etp/finite_uncovered.txt` lists 264 implications that have a finite
+counterexample and that no construction in this corpus reaches. Every one of
+them has an explicit finite witness, and every witness comes from ETP's own
+`Generated/All4x4Tables`. No new magma was constructed and no search was
+widened: the tables were already published.
+
+That is an indexing problem, not a search problem. Three defects, counted:
+
+**1. Tables are indexed by the pair they were generated for, not by what they
+separate.** A table's `Facts` line records the facts emitted for it; it is not
+the set of laws the table satisfies. Of the 264 pairs, 206 are separated by a
+published table whose `Facts` line never mentions them. Only 58 are annotated.
+
+**2. Transposes are not in the corpus.** `T^T` is a different magma on the same
+carrier with left and right swapped. 24 of the 264 pairs have no non-transposed
+witness anywhere in the 946 parseable tables; they are witnessed only after
+transposing.
+
+**3. `finite_uncovered.txt` is a stale snapshot.** 16 of the 39 pairs it lists on
+the 1062 side are already closed by `src/ext.rs` (`docs/the-39.md`, lines
+147–162) and the file was not regenerated afterwards. It is inaccurate even
+without this work.
+
+## Three numbers
+
+**206 of 264** pairs are separated by a published table whose own annotation
+does not mention them. That is the defect: an index keyed on the annotated pair
+cannot see them, whatever the search does.
+
+**31 tables** close all 264. Merging 31 tables into the corpus empties the list.
+This is the size of the repair, and it is smaller than the residual it replaces.
+
+**137 of 264** are separated by one table: `Refutation899`, 9 elements. One
+9-element magma answers more than half of the residual. `Refutation924` and
+`Refutation923` (21 elements) add 38 and 35.
+
+## Neither corpus is complete, and they miss different pairs
+
+Measured against ETP's finite implication graph — 1054 finitely refutable pairs,
+450 on the 1062 side plus 604 on the 814 side:
+
+| | pairs |
+|---|---|
+| published ETP tables, direct indexing | 916 / 1054 |
+| published ETP tables + transposes | **940 / 1054** |
+| this corpus, as reported (411 + 379) | **790 / 1054** |
+| both | 676 |
+| tables only | 264 |
+| this corpus only | **114** |
+| union | **1054 / 1054** |
+
+The 114 pairs that no published table separates are not the same 264 that this
+corpus misses. Both lists are enumerated in
+`data/coverage_arithmetic.json`.
+
+## The repair, in three steps
+
+1. **Merge the two corpora.** The published tables and this corpus each cover
+   pairs the other does not; the union is the whole finitely refutable set.
+2. **Add every table's transpose.** One extra table per table, and it recovers
+   24 of the 264.
+3. **Index by the set of laws each table satisfies**, computed rather than read
+   off the annotation, and answer separation queries from that index instead of
+   from the generation pair.
+
+## Reproduce
+
+`reverse_index.py` is standard-library Python 3 and needs nothing else:
+
+```bash
+python3 reverse_index.py \
+  --base /path/to/equational_theories/Generated/All4x4Tables \
+  --targets /path/to/parsimagma/data/etp/finite_uncovered.txt \
+  --out ./out --selfcheck
+```
+
+```
+corpus: 946 tables loaded, 225 files skipped
+corpus with transposes: 1892 tables
+selfcheck: 200 (table, law) samples, 0 disagreements
+covered: 264/264 target pairs (100.0%)
+  of which 240 have a non-transposed witness and 24 need a transpose
+```
+
+`--laws all` computes complete 4694-law signatures in 63 seconds over the whole
+corpus; `--no-transpose` reproduces the 240/264 split; `--strict` exits nonzero
+if any target has no witness, which is the check worth putting in CI.
+
+Every witness is recorded in `data/witnesses_264.json` with its table, carrier,
+transpose flag, sha256 and the assignment that refutes the target. Three
+independent evaluators (a stack machine, a naive recursion, and a third library)
+agree on all 264, including the assignment variables.
+
+## Two decode details, if any of this is rebuilt
+
+- `finite_graph.json`'s `rle_encoded_array` is `(value, runLength)` pairs; the
+  nine values are the `ids` array at `scripts/generate_equation_explorer_graph.py`
+  lines 17–27 and an implication is present iff the value is odd (line 74).
+  Counting "value nonzero" as refuted gives 452 finitely refutable on the 1062
+  side instead of 450, because the two `unknown` cells get miscounted. Excluding
+  value 8 gives 610 + 450 + 2 = 1062, with the 2 open pairs `(677,255)` and
+  `(2910,47)`.
+- `equations.txt` prints parentheses only around composite subterms, so
+  `x ◇ y ◇ z` means `x ◇ (y ◇ z)`.
+
+## What I am asking
+
+Would you like me to open a PR? If so, the shape I would propose is a
+`pm reverse-index` subcommand over `src/sig.rs` and `src/coverage.rs`, with
+`finite_uncovered.txt` regenerated by that code path rather than replaced by
+hand, plus the 31 witness tables as a new `data/etp/` family. I have not opened
+one; nothing in this repository has been modified.

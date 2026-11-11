@@ -1,0 +1,133 @@
+{
+ "title": "最后 8 对残差的命中表（946 张 ETP 生成表全扫）",
+ "method": "从 $ETP_HOME/etp-refutations-all 的 1171 个 .lean 用正则 finOpTable \"[[...]]\" 解析出 946 张表，逐张判定「满足假设且反驳目标」，判定用 etp_magma_lib，另用自写朴素递归求值器对命中的表独立复验",
+ "tables_parsed": 946,
+ "pairs": {
+  "854_1055": {
+   "owner": "task-5",
+   "closed": true,
+   "witnesses": [
+    {
+     "file": "Refutation934",
+     "carrier": 24,
+     "table_sha256_16": "0f709d4ca6258600"
+    }
+   ],
+   "witness_count": 1
+  },
+  "854_1067": {
+   "owner": "task-5",
+   "closed": true,
+   "witnesses": [
+    {
+     "file": "Refutation870",
+     "carrier": 11,
+     "table_sha256_16": "1a2735a0a3728608"
+    },
+    {
+     "file": "Refutation921",
+     "carrier": 11,
+     "table_sha256_16": "7f8bf0d46dc1fdf0"
+    },
+    {
+     "file": "Refutation925",
+     "carrier": 12,
+     "table_sha256_16": "cf5101ae0e8151e1"
+    },
+    {
+     "file": "Refutation932",
+     "carrier": 21,
+     "table_sha256_16": "39f483a15bd9e8d8"
+    },
+    {
+     "file": "Refutation933",
+     "carrier": 19,
+     "table_sha256_16": "f5f6680113c70eef"
+    }
+   ],
+   "witness_count": 6
+  },
+  "873_880": {
+   "owner": "task-5",
+   "closed": true,
+   "witnesses": [
+    {
+     "file": "Refutation913",
+     "carrier": 8,
+     "table_sha256_16": "49ab2d8018152f59"
+    }
+   ],
+   "witness_count": 1
+  },
+  "873_4588": {
+   "owner": "task-5",
+   "closed": true,
+   "witnesses": [
+    {
+     "file": "Refutation913",
+     "carrier": 8,
+     "table_sha256_16": "49ab2d8018152f59"
+    }
+   ],
+   "witness_count": 1
+  },
+  "2712_2285": {
+   "owner": "946表全扫",
+   "closed": true,
+   "witnesses": [
+    {
+     "file": "Refutation36",
+     "carrier": 11,
+     "table_sha256_16": "7edff751092ead15"
+    },
+    {
+     "file": "Refutation918",
+     "carrier": 11,
+     "table_sha256_16": "4b47d4ced4c9843f"
+    }
+   ],
+   "witness_count": 2
+  },
+  "2712_2452": {
+   "owner": "未决",
+   "closed": false,
+   "witnesses": [],
+   "witness_count": 0
+  },
+  "2712_2488": {
+   "owner": "946表全扫",
+   "closed": true,
+   "witnesses": [
+    {
+     "file": "Refutation36",
+     "carrier": 11,
+     "table_sha256_16": "7edff751092ead15"
+    },
+    {
+     "file": "Refutation918",
+     "carrier": 11,
+     "table_sha256_16": "4b47d4ced4c9843f"
+    }
+   ],
+   "witness_count": 2
+  },
+  "2734_4273": {
+   "owner": "946表全扫",
+   "closed": true,
+   "witnesses": [
+    {
+     "file": "Refutation895",
+     "carrier": 8,
+     "table_sha256_16": "dd9aef1ce260fd08"
+    }
+   ],
+   "witness_count": 1
+  }
+ },
+ "summary": {
+  "closed": 7,
+  "open": [
+   "2712_2452"
+  ]
+ }
+}

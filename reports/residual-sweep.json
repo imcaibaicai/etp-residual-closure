@@ -1,0 +1,716 @@
+{
+ "title": "残差收敛：264 对里真正还开着的只剩 8 对",
+ "generated_at": "2026-11-10T20:16:55+08:00",
+ "method": "用 etp_magma_lib（第三方实现）对 e1486-hunter 交付的 5 张不同表做全扫描：表满足假设律且反驳目标律即为有效有限反例。替换桥接 E168 ⟹ {E1486, E1487, E2126, E2164} 由 z→(z◇z)、y→(y◇y)、z→(z◇w) 等纯项替换得到。",
+ "funnel": {
+  "pairs_total": 264,
+  "no_witness_at_probe": 181,
+  "solved_by_e1486_hunter": 104,
+  "remaining_after_that": 77,
+  "hit_by_published_tables": 65,
+  "no_table_hit": 12,
+  "of_those_closed_by_carlok_extension": 4,
+  "truly_open": 8
+ },
+ "tables_used": {
+  "fee012a8": {
+   "carrier": 21,
+   "satisfies_hypotheses": []
+  },
+  "6ecdcfa7": {
+   "carrier": 9,
+   "satisfies_hypotheses": [
+    168,
+    1487,
+    2164
+   ]
+  },
+  "796dbb87": {
+   "carrier": 21,
+   "satisfies_hypotheses": []
+  },
+  "7a6f2e6e": {
+   "carrier": 21,
+   "satisfies_hypotheses": []
+  },
+  "7347815c": {
+   "carrier": 21,
+   "satisfies_hypotheses": []
+  }
+ },
+ "hits": [
+  {
+   "from": 168,
+   "to": 3463,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ x = x ◇ ((y ◇ x) ◇ z)"
+  },
+  {
+   "from": 168,
+   "to": 3523,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = x ◇ ((y ◇ y) ◇ z)"
+  },
+  {
+   "from": 168,
+   "to": 3532,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ x)"
+  },
+  {
+   "from": 168,
+   "to": 3533,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ y)"
+  },
+  {
+   "from": 168,
+   "to": 3534,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ z)"
+  },
+  {
+   "from": 168,
+   "to": 3535,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ w)"
+  },
+  {
+   "from": 168,
+   "to": 3883,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ x = (y ◇ (x ◇ z)) ◇ x"
+  },
+  {
+   "from": 168,
+   "to": 3921,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = (x ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 168,
+   "to": 3958,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = (y ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 168,
+   "to": 3989,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = (z ◇ (x ◇ x)) ◇ y"
+  },
+  {
+   "from": 168,
+   "to": 3997,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = (z ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 168,
+   "to": 4001,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ y = (z ◇ (x ◇ w)) ◇ y"
+  },
+  {
+   "from": 168,
+   "to": 4315,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ (y ◇ x) = x ◇ (y ◇ z)"
+  },
+  {
+   "from": 168,
+   "to": 4339,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ (y ◇ y) = x ◇ (y ◇ z)"
+  },
+  {
+   "from": 168,
+   "to": 4357,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "x ◇ (y ◇ z) = x ◇ (y ◇ w)"
+  },
+  {
+   "from": 168,
+   "to": 4615,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "(x ◇ x) ◇ y = (z ◇ x) ◇ y"
+  },
+  {
+   "from": 168,
+   "to": 4645,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "(x ◇ y) ◇ x = (z ◇ y) ◇ x"
+  },
+  {
+   "from": 168,
+   "to": 4689,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ z)",
+   "tgt": "(x ◇ y) ◇ z = (w ◇ y) ◇ z"
+  },
+  {
+   "from": 1487,
+   "to": 3463,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ x = x ◇ ((y ◇ x) ◇ z)"
+  },
+  {
+   "from": 1487,
+   "to": 3521,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = x ◇ ((y ◇ y) ◇ x)"
+  },
+  {
+   "from": 1487,
+   "to": 3522,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = x ◇ ((y ◇ y) ◇ y)"
+  },
+  {
+   "from": 1487,
+   "to": 3523,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = x ◇ ((y ◇ y) ◇ z)"
+  },
+  {
+   "from": 1487,
+   "to": 3532,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ x)"
+  },
+  {
+   "from": 1487,
+   "to": 3533,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ y)"
+  },
+  {
+   "from": 1487,
+   "to": 3534,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ z)"
+  },
+  {
+   "from": 1487,
+   "to": 3535,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ w)"
+  },
+  {
+   "from": 1487,
+   "to": 3883,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ x = (y ◇ (x ◇ z)) ◇ x"
+  },
+  {
+   "from": 1487,
+   "to": 3915,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = (x ◇ (x ◇ x)) ◇ y"
+  },
+  {
+   "from": 1487,
+   "to": 3921,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = (x ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 1487,
+   "to": 3958,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = (y ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 1487,
+   "to": 3989,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = (z ◇ (x ◇ x)) ◇ y"
+  },
+  {
+   "from": 1487,
+   "to": 3997,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = (z ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 1487,
+   "to": 4001,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ y = (z ◇ (x ◇ w)) ◇ y"
+  },
+  {
+   "from": 1487,
+   "to": 4282,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ (x ◇ y) = x ◇ (x ◇ z)"
+  },
+  {
+   "from": 1487,
+   "to": 4314,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ (y ◇ x) = x ◇ (y ◇ y)"
+  },
+  {
+   "from": 1487,
+   "to": 4315,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ (y ◇ x) = x ◇ (y ◇ z)"
+  },
+  {
+   "from": 1487,
+   "to": 4339,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ (y ◇ y) = x ◇ (y ◇ z)"
+  },
+  {
+   "from": 1487,
+   "to": 4357,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "x ◇ (y ◇ z) = x ◇ (y ◇ w)"
+  },
+  {
+   "from": 1487,
+   "to": 4615,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "(x ◇ x) ◇ y = (z ◇ x) ◇ y"
+  },
+  {
+   "from": 1487,
+   "to": 4645,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "(x ◇ y) ◇ x = (z ◇ y) ◇ x"
+  },
+  {
+   "from": 1487,
+   "to": 4666,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "(x ◇ y) ◇ y = (z ◇ y) ◇ y"
+  },
+  {
+   "from": 1487,
+   "to": 4689,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt": "(x ◇ y) ◇ z = (w ◇ y) ◇ z"
+  },
+  {
+   "from": 2164,
+   "to": 3463,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ x = x ◇ ((y ◇ x) ◇ z)"
+  },
+  {
+   "from": 2164,
+   "to": 3521,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = x ◇ ((y ◇ y) ◇ x)"
+  },
+  {
+   "from": 2164,
+   "to": 3522,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = x ◇ ((y ◇ y) ◇ y)"
+  },
+  {
+   "from": 2164,
+   "to": 3523,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = x ◇ ((y ◇ y) ◇ z)"
+  },
+  {
+   "from": 2164,
+   "to": 3532,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ x)"
+  },
+  {
+   "from": 2164,
+   "to": 3533,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ y)"
+  },
+  {
+   "from": 2164,
+   "to": 3534,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ z)"
+  },
+  {
+   "from": 2164,
+   "to": 3535,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = x ◇ ((z ◇ y) ◇ w)"
+  },
+  {
+   "from": 2164,
+   "to": 3883,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ x = (y ◇ (x ◇ z)) ◇ x"
+  },
+  {
+   "from": 2164,
+   "to": 3921,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = (x ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 2164,
+   "to": 3958,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = (y ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 2164,
+   "to": 3989,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = (z ◇ (x ◇ x)) ◇ y"
+  },
+  {
+   "from": 2164,
+   "to": 3997,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = (z ◇ (x ◇ z)) ◇ y"
+  },
+  {
+   "from": 2164,
+   "to": 4001,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ y = (z ◇ (x ◇ w)) ◇ y"
+  },
+  {
+   "from": 2164,
+   "to": 4282,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ (x ◇ y) = x ◇ (x ◇ z)"
+  },
+  {
+   "from": 2164,
+   "to": 4314,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ (y ◇ x) = x ◇ (y ◇ y)"
+  },
+  {
+   "from": 2164,
+   "to": 4315,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ (y ◇ x) = x ◇ (y ◇ z)"
+  },
+  {
+   "from": 2164,
+   "to": 4339,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ (y ◇ y) = x ◇ (y ◇ z)"
+  },
+  {
+   "from": 2164,
+   "to": 4357,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "x ◇ (y ◇ z) = x ◇ (y ◇ w)"
+  },
+  {
+   "from": 2164,
+   "to": 4615,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "(x ◇ x) ◇ y = (z ◇ x) ◇ y"
+  },
+  {
+   "from": 2164,
+   "to": 4645,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "(x ◇ y) ◇ x = (z ◇ y) ◇ x"
+  },
+  {
+   "from": 2164,
+   "to": 4666,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "(x ◇ y) ◇ y = (z ◇ y) ◇ y"
+  },
+  {
+   "from": 2164,
+   "to": 4689,
+   "set": "saturation_refuted",
+   "table_sha8": "6ecdcfa7",
+   "carrier": 9,
+   "hyp": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt": "(x ◇ y) ◇ z = (w ◇ y) ◇ z"
+  }
+ ],
+ "truly_open_pairs": [
+  {
+   "from": 873,
+   "to": 880,
+   "set": "saturation_refuted",
+   "hyp": "x = y ◇ ((x ◇ x) ◇ (y ◇ y))",
+   "tgt": "x = y ◇ ((x ◇ y) ◇ (x ◇ y))"
+  },
+  {
+   "from": 873,
+   "to": 4588,
+   "set": "saturation_refuted",
+   "hyp": "x = y ◇ ((x ◇ x) ◇ (y ◇ y))",
+   "tgt": "(x ◇ x) ◇ x = (y ◇ x) ◇ y"
+  },
+  {
+   "from": 2734,
+   "to": 4273,
+   "set": "saturation_refuted",
+   "hyp": "x = ((y ◇ y) ◇ (x ◇ x)) ◇ y",
+   "tgt": "x ◇ (x ◇ x) = y ◇ (x ◇ y)"
+  },
+  {
+   "from": 854,
+   "to": 1055,
+   "set": "unresolved",
+   "hyp": "x = x ◇ ((y ◇ z) ◇ (x ◇ z))",
+   "tgt": "x = x ◇ ((y ◇ (z ◇ x)) ◇ x)"
+  },
+  {
+   "from": 854,
+   "to": 1067,
+   "set": "unresolved",
+   "hyp": "x = x ◇ ((y ◇ z) ◇ (x ◇ z))",
+   "tgt": "x = x ◇ ((y ◇ (z ◇ w)) ◇ x)"
+  },
+  {
+   "from": 2712,
+   "to": 2285,
+   "set": "unresolved",
+   "hyp": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "tgt": "x = (x ◇ (y ◇ (z ◇ w))) ◇ x"
+  },
+  {
+   "from": 2712,
+   "to": 2452,
+   "set": "unresolved",
+   "hyp": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "tgt": "x = (x ◇ ((x ◇ y) ◇ z)) ◇ x"
+  },
+  {
+   "from": 2712,
+   "to": 2488,
+   "set": "unresolved",
+   "hyp": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "tgt": "x = (x ◇ ((y ◇ z) ◇ w)) ◇ x"
+  }
+ ],
+ "closed_by_extension_but_no_table": [
+  {
+   "from": 476,
+   "to": 359,
+   "set": "unresolved",
+   "hyp": "x = y ◇ (x ◇ (y ◇ (y ◇ x)))",
+   "tgt": "x ◇ x = (x ◇ x) ◇ x"
+  },
+  {
+   "from": 503,
+   "to": 359,
+   "set": "unresolved",
+   "hyp": "x = y ◇ (y ◇ (x ◇ (y ◇ x)))",
+   "tgt": "x ◇ x = (x ◇ x) ◇ x"
+  },
+  {
+   "from": 3069,
+   "to": 307,
+   "set": "unresolved",
+   "hyp": "x = (((x ◇ y) ◇ x) ◇ y) ◇ y",
+   "tgt": "x ◇ x = x ◇ (x ◇ x)"
+  },
+  {
+   "from": 3076,
+   "to": 307,
+   "set": "unresolved",
+   "hyp": "x = (((x ◇ y) ◇ y) ◇ x) ◇ y",
+   "tgt": "x ◇ x = x ◇ (x ◇ x)"
+  }
+ ]
+}

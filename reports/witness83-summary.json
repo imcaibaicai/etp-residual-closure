@@ -1,0 +1,459 @@
+{
+ "generated_at": "2026-11-10T19:56:57",
+ "pairs_total": 83,
+ "outcomes": {
+  "pass": 83,
+  "fail": 0,
+  "parse_error": 0
+ },
+ "by_witness_status": {
+  "witness": {
+   "total": 58,
+   "pass": 58,
+   "fail": 0,
+   "parse_error": 0
+  },
+  "witness_via_dual": {
+   "total": 25,
+   "pass": 25,
+   "fail": 0,
+   "parse_error": 0
+  }
+ },
+ "path_availability": {
+  "both": 8,
+  "direct_only": 51,
+  "dual_only": 24,
+  "neither": 0
+ },
+ "files": {
+  "needed": 17,
+  "downloaded": 17,
+  "parsed": 17,
+  "parse_errors": 0
+ },
+ "downloads": {
+  "Refutation889.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation889.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation889.lean",
+   "state": "cached",
+   "bytes": 1058,
+   "sha256": "1d27aabde3e316557dd4af88098fc5e45cd8011bd9b68f8d924a02d15a07f45a"
+  },
+  "Refutation895.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation895.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation895.lean",
+   "state": "cached",
+   "bytes": 1391,
+   "sha256": "a38790fcead028b659294fad993168221f84d18ec68ae71fedffe417b4b730fd"
+  },
+  "Refutation899.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation899.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation899.lean",
+   "state": "cached",
+   "bytes": 1603,
+   "sha256": "4d6521b564122246b6f2660467bba7626b0aa078b969c91b1526bac5369368b6"
+  },
+  "Refutation913.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation913.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation913.lean",
+   "state": "cached",
+   "bytes": 1368,
+   "sha256": "fcca55d31491ccca081e63aa8151c2a2c9931162c88648b5ae985222c4ed6ed9"
+  },
+  "Refutation923.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation923.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation923.lean",
+   "state": "cached",
+   "bytes": 6508,
+   "sha256": "2c9de1a237779e2367d71930bff87c7c67e34256faf46e1e07d83896a1e4f0fa"
+  },
+  "Refutation924.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation924.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation924.lean",
+   "state": "cached",
+   "bytes": 6414,
+   "sha256": "64759b690a1de754cea2a5501cc4e1398582deb1074edf5fde889566e5b867eb"
+  },
+  "Refutation929.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation929.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation929.lean",
+   "state": "cached",
+   "bytes": 6300,
+   "sha256": "873e2a4ba735d1b8609192badddbc9cd002f0c4c39a72d74f729c86f33b9ddd3"
+  },
+  "Refutation930.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation930.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation930.lean",
+   "state": "cached",
+   "bytes": 2319,
+   "sha256": "b2717d57bec343f28bd48d83aec269f4f578d78c9e99c2a3ba74072cb1f64069"
+  },
+  "Refutation931.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation931.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation931.lean",
+   "state": "cached",
+   "bytes": 9015,
+   "sha256": "50ae6773351b1a3da97ceca852467f8f4f1e7e12a5ae8e241edbfc2cb8a85a3b"
+  },
+  "Refutation932.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation932.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation932.lean",
+   "state": "cached",
+   "bytes": 6065,
+   "sha256": "6f6bce7491e58973c3a0091c0f97aa20312915bb379f54ebe72045b98f459ba9"
+  },
+  "Refutation933.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation933.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation933.lean",
+   "state": "cached",
+   "bytes": 5148,
+   "sha256": "96e5b12100760f7e88c27cc0d210ff0da3e2b7f96ef39a7427efc7946366b430"
+  },
+  "Refutation934.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation934.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation934.lean",
+   "state": "cached",
+   "bytes": 8164,
+   "sha256": "fda3311184341f06fb9cf6f4d62f3cc0f4d66374e3c36794c1ced9c30e778bc6"
+  },
+  "Refutation935.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation935.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation935.lean",
+   "state": "cached",
+   "bytes": 18645,
+   "sha256": "e74e99d2c3b1f528096830336386b60261dd5bf752059cea57a7313552ae45b6"
+  },
+  "Refutation936.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation936.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation936.lean",
+   "state": "cached",
+   "bytes": 18639,
+   "sha256": "631fefab208555b1e7c0dad3eb73009d9975389b0e379bb4def0ebbe50c3fb73"
+  },
+  "Refutation937.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation937.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation937.lean",
+   "state": "cached",
+   "bytes": 17615,
+   "sha256": "72f7840441a7ac3f0169defecdcb80edb4b9f3484d379d3a9f262f22dca7881f"
+  },
+  "Refutation938.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation938.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation938.lean",
+   "state": "cached",
+   "bytes": 82541,
+   "sha256": "728fa41aaaa87b3a4cb2b777ee331c24709a228d576d20a9e872e6072a575e15"
+  },
+  "Refutation939.lean": {
+   "rel": "equational_theories/Generated/All4x4Tables/Refutation939.lean",
+   "url": "https://raw.githubusercontent.com/teorth/equational_theories/main/equational_theories/Generated/All4x4Tables/Refutation939.lean",
+   "state": "cached",
+   "bytes": 3429,
+   "sha256": "16865c7a3fb7ea409909fabc5c0edd7465e50a5430be3c6fa4cdbd57774abf63"
+  }
+ },
+ "per_file": {
+  "Refutation899.lean": {
+   "file": "Refutation899.lean",
+   "carrier": 9,
+   "sat": [
+    168
+   ],
+   "ref_count": 12,
+   "pairs": 8,
+   "pairs_by_status": {
+    "witness": 7,
+    "witness_via_dual": 1
+   },
+   "pass": 8,
+   "fail": 0
+  },
+  "Refutation913.lean": {
+   "file": "Refutation913.lean",
+   "carrier": 8,
+   "sat": [
+    873
+   ],
+   "ref_count": 3,
+   "pairs": 1,
+   "pairs_by_status": {
+    "witness": 1
+   },
+   "pass": 1,
+   "fail": 0
+  },
+  "Refutation931.lean": {
+   "file": "Refutation931.lean",
+   "carrier": 25,
+   "sat": [
+    1110
+   ],
+   "ref_count": 1,
+   "pairs": 2,
+   "pairs_by_status": {
+    "witness": 1,
+    "witness_via_dual": 1
+   },
+   "pass": 2,
+   "fail": 0
+  },
+  "Refutation924.lean": {
+   "file": "Refutation924.lean",
+   "carrier": 21,
+   "sat": [
+    1486
+   ],
+   "ref_count": 16,
+   "pairs": 20,
+   "pairs_by_status": {
+    "witness": 16,
+    "witness_via_dual": 4
+   },
+   "pass": 20,
+   "fail": 0
+  },
+  "Refutation923.lean": {
+   "file": "Refutation923.lean",
+   "carrier": 21,
+   "sat": [
+    2126
+   ],
+   "ref_count": 15,
+   "pairs": 18,
+   "pairs_by_status": {
+    "witness_via_dual": 3,
+    "witness": 15
+   },
+   "pass": 18,
+   "fail": 0
+  },
+  "Refutation929.lean": {
+   "file": "Refutation929.lean",
+   "carrier": 21,
+   "sat": [
+    1486
+   ],
+   "ref_count": 1,
+   "pairs": 2,
+   "pairs_by_status": {
+    "witness": 1,
+    "witness_via_dual": 1
+   },
+   "pass": 2,
+   "fail": 0
+  },
+  "Refutation895.lean": {
+   "file": "Refutation895.lean",
+   "carrier": 8,
+   "sat": [
+    2734
+   ],
+   "ref_count": 7,
+   "pairs": 1,
+   "pairs_by_status": {
+    "witness": 1
+   },
+   "pass": 1,
+   "fail": 0
+  },
+  "Refutation889.lean": {
+   "file": "Refutation889.lean",
+   "carrier": 6,
+   "sat": [
+    3558
+   ],
+   "ref_count": 1,
+   "pairs": 1,
+   "pairs_by_status": {
+    "witness": 1
+   },
+   "pass": 1,
+   "fail": 0
+  },
+  "Refutation936.lean": {
+   "file": "Refutation936.lean",
+   "carrier": 36,
+   "sat": [
+    476
+   ],
+   "ref_count": 1,
+   "pairs": 2,
+   "pairs_by_status": {
+    "witness": 1,
+    "witness_via_dual": 1
+   },
+   "pass": 2,
+   "fail": 0
+  },
+  "Refutation935.lean": {
+   "file": "Refutation935.lean",
+   "carrier": 36,
+   "sat": [
+    503
+   ],
+   "ref_count": 2,
+   "pairs": 4,
+   "pairs_by_status": {
+    "witness": 2,
+    "witness_via_dual": 2
+   },
+   "pass": 4,
+   "fail": 0
+  },
+  "Refutation933.lean": {
+   "file": "Refutation933.lean",
+   "carrier": 19,
+   "sat": [
+    854
+   ],
+   "ref_count": 1,
+   "pairs": 2,
+   "pairs_by_status": {
+    "witness": 1,
+    "witness_via_dual": 1
+   },
+   "pass": 2,
+   "fail": 0
+  },
+  "Refutation934.lean": {
+   "file": "Refutation934.lean",
+   "carrier": 24,
+   "sat": [
+    854
+   ],
+   "ref_count": 1,
+   "pairs": 2,
+   "pairs_by_status": {
+    "witness": 1,
+    "witness_via_dual": 1
+   },
+   "pass": 2,
+   "fail": 0
+  },
+  "Refutation932.lean": {
+   "file": "Refutation932.lean",
+   "carrier": 21,
+   "sat": [
+    854
+   ],
+   "ref_count": 2,
+   "pairs": 4,
+   "pairs_by_status": {
+    "witness": 2,
+    "witness_via_dual": 2
+   },
+   "pass": 4,
+   "fail": 0
+  },
+  "Refutation930.lean": {
+   "file": "Refutation930.lean",
+   "carrier": 12,
+   "sat": [
+    879
+   ],
+   "ref_count": 1,
+   "pairs": 2,
+   "pairs_by_status": {
+    "witness": 1,
+    "witness_via_dual": 1
+   },
+   "pass": 2,
+   "fail": 0
+  },
+  "Refutation938.lean": {
+   "file": "Refutation938.lean",
+   "carrier": 65,
+   "sat": [
+    1076
+   ],
+   "ref_count": 2,
+   "pairs": 4,
+   "pairs_by_status": {
+    "witness": 2,
+    "witness_via_dual": 2
+   },
+   "pass": 4,
+   "fail": 0
+  },
+  "Refutation937.lean": {
+   "file": "Refutation937.lean",
+   "carrier": 35,
+   "sat": [
+    1516
+   ],
+   "ref_count": 1,
+   "pairs": 2,
+   "pairs_by_status": {
+    "witness": 1,
+    "witness_via_dual": 1
+   },
+   "pass": 2,
+   "fail": 0
+  },
+  "Refutation939.lean": {
+   "file": "Refutation939.lean",
+   "carrier": 15,
+   "sat": [
+    1518
+   ],
+   "ref_count": 4,
+   "pairs": 8,
+   "pairs_by_status": {
+    "witness": 4,
+    "witness_via_dual": 4
+   },
+   "pass": 8,
+   "fail": 0
+  }
+ },
+ "carrier_sizes": [
+  6,
+  8,
+  9,
+  12,
+  15,
+  19,
+  21,
+  24,
+  25,
+  35,
+  36,
+  65
+ ],
+ "facts_crosscheck": {
+  "files": 17,
+  "laws_checked": 88,
+  "files_all_ok": 17
+ },
+ "controls": {
+  "all_ok": true,
+  "checks": 51,
+  "sensitivity": {
+   "file": "Refutation899.lean",
+   "law": 168,
+   "satisfied_before_mutation": true,
+   "satisfied_after_mutation": false,
+   "mutation": "table[0][0] -> 3"
+  }
+ },
+ "observation_dual_also_direct": [
+  {
+   "from": 168,
+   "to": 4282,
+   "file": "Refutation899.lean",
+   "status": "witness_via_dual"
+  }
+ ],
+ "anomaly_counts": {
+  "parse_errors": 0,
+  "unresolved_files": 0,
+  "failures": 0,
+  "graph_inconsistent": 0,
+  "theorem_name_mismatch": 0,
+  "line_mismatch": 0,
+  "table_name_mismatch": 0,
+  "facts_coverage_missing": 0,
+  "facts_crosscheck_failed": 0
+ }
+}

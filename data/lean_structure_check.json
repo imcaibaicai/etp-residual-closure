@@ -1,0 +1,149 @@
+{
+ "checked": [
+  "imports present",
+  "def carrier == table size",
+  "table square and in range",
+  "one theorem per file, name matches def",
+  "Facts lists == witnesses_264 sets",
+  "carrier matches tables_referenced.json",
+  "transpose flag matches name suffix",
+  "def names unique",
+  "«» balanced",
+  "file ends with a term"
+ ],
+ "not_checked": [
+  "compilation: checked separately, by `lake env lean` against Lean 4.29.1 (data/lean_compile_check.json: 31 passed, 0 failed, 423.4 s). This script reads the files as text and compiles nothing",
+  "a full `lake build` of the ETP project, and its CI",
+  "proof terms: `by decideFin!` is read as text here, never elaborated"
+ ],
+ "files": 31,
+ "passed": 31,
+ "failed": 0,
+ "failures": [],
+ "per_file": [
+  {
+   "file": "Witness_Refutation36.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation870.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation889.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation895.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation899.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation913.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation923.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation924.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation924T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation929.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation929T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation930.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation930T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation931.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation931T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation932.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation932T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation933.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation933T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation934.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation934T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation935.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation935T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation936.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation936T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation937.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation937T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation938.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation938T.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation939.lean",
+   "issues": []
+  },
+  {
+   "file": "Witness_Refutation939T.lean",
+   "issues": []
+  }
+ ]
+}

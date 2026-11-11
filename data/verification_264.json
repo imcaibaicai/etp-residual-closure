@@ -1,0 +1,19 @@
+{
+ "totals": {
+  "pairs": 264,
+  "agreement_true": 264,
+  "transpose_witnesses": 24,
+  "distinct_tables": 31,
+  "conflicts": 0
+ },
+ "leads_histogram": {
+  "substitution_bridge": 104,
+  "published_facts_index": 83,
+  "published_table_sweep": 65,
+  "corpus_full_sweep": 7,
+  "ext_parameters": 4,
+  "dual_transpose": 1
+ },
+ "conflicts": [],
+ "distinct_tables": 31
+}

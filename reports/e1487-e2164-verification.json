@@ -1,0 +1,874 @@
+{
+ "generated_by": "e1487-e2164-analyzer",
+ "generated_at": "2026-11-10T20:30:15+08:00",
+ "task": "verify that one 9-element table closes all 47 (E1487|E2164) -> target pairs",
+ "conclusion": "VERIFIED by two independent evaluators",
+ "witness": {
+  "source": "$ETP_HOME/etp-generated/Refutation899.lean (Lean theorem Facts G [168] [...])",
+  "carrier": 9,
+  "table": [
+   [
+    2,
+    8,
+    7,
+    2,
+    8,
+    8,
+    2,
+    7,
+    7
+   ],
+   [
+    1,
+    1,
+    0,
+    6,
+    6,
+    6,
+    1,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    0,
+    6,
+    6,
+    6,
+    3,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    0,
+    6,
+    6,
+    6,
+    1,
+    0,
+    0
+   ],
+   [
+    3,
+    3,
+    5,
+    4,
+    4,
+    4,
+    3,
+    5,
+    5
+   ],
+   [
+    2,
+    8,
+    7,
+    2,
+    8,
+    8,
+    2,
+    7,
+    7
+   ],
+   [
+    3,
+    3,
+    5,
+    4,
+    4,
+    4,
+    3,
+    5,
+    5
+   ],
+   [
+    2,
+    8,
+    7,
+    2,
+    8,
+    8,
+    2,
+    7,
+    7
+   ],
+   [
+    1,
+    1,
+    5,
+    4,
+    4,
+    4,
+    1,
+    5,
+    5
+   ]
+  ],
+  "sha256": "6ecdcfa70b18c4611c5ce7eb1516c712c85e7ccfcb0b172364b735e5d846d53c",
+  "sha8_matches_leads_reference": true
+ },
+ "hypothesis_checks": {
+  "168": {
+   "lib": true,
+   "naive": true,
+   "text": "x = (y ◇ x) ◇ (x ◇ z)",
+   "agree": true
+  },
+  "1486": {
+   "lib": true,
+   "naive": true,
+   "text": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "agree": true
+  },
+  "1487": {
+   "lib": true,
+   "naive": true,
+   "text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "agree": true
+  },
+  "2164": {
+   "lib": true,
+   "naive": true,
+   "text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "agree": true
+  },
+  "2126": {
+   "lib": true,
+   "naive": true,
+   "text": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "agree": true
+  }
+ },
+ "claims": {
+  "pairs_total": 47,
+  "pairs_closed": 47,
+  "by_hypothesis": {
+   "1487": 24,
+   "2164": 23
+  },
+  "all_hypotheses_satisfied": true,
+  "S_condition_holds": true,
+  "dual_path_agreement": true
+ },
+ "problems": [],
+ "pairs": [
+  {
+   "from": 1487,
+   "to": 3463,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ x = x ◇ ((y ◇ x) ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3521,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = x ◇ ((y ◇ y) ◇ x)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 4
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3522,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = x ◇ ((y ◇ y) ◇ y)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 3
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3523,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = x ◇ ((y ◇ y) ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3532,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = x ◇ ((z ◇ y) ◇ x)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3533,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = x ◇ ((z ◇ y) ◇ y)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3534,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = x ◇ ((z ◇ y) ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3535,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = x ◇ ((z ◇ y) ◇ w)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1,
+    "w": 0
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3883,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ x = (y ◇ (x ◇ z)) ◇ x",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3915,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = (x ◇ (x ◇ x)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 2,
+    "y": 0
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3921,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = (x ◇ (x ◇ z)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3958,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = (y ◇ (x ◇ z)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3989,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = (z ◇ (x ◇ x)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 3997,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = (z ◇ (x ◇ z)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 0,
+    "z": 5
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4001,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ y = (z ◇ (x ◇ w)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 0,
+    "z": 0,
+    "w": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4282,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ (x ◇ y) = x ◇ (x ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4314,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ (y ◇ x) = x ◇ (y ◇ y)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 3
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4315,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ (y ◇ x) = x ◇ (y ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4339,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ (y ◇ y) = x ◇ (y ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4357,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "x ◇ (y ◇ z) = x ◇ (y ◇ w)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "w": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4615,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "(x ◇ x) ◇ y = (z ◇ x) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4645,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "(x ◇ y) ◇ x = (z ◇ y) ◇ x",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4666,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "(x ◇ y) ◇ y = (z ◇ y) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 1487,
+   "to": 4689,
+   "hyp_text": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "tgt_text": "(x ◇ y) ◇ z = (w ◇ y) ◇ z",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3463,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ x = x ◇ ((y ◇ x) ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3521,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = x ◇ ((y ◇ y) ◇ x)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 4
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3522,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = x ◇ ((y ◇ y) ◇ y)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 3
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3523,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = x ◇ ((y ◇ y) ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3532,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = x ◇ ((z ◇ y) ◇ x)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3533,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = x ◇ ((z ◇ y) ◇ y)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3534,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = x ◇ ((z ◇ y) ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3535,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = x ◇ ((z ◇ y) ◇ w)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1,
+    "w": 0
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3883,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ x = (y ◇ (x ◇ z)) ◇ x",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3921,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = (x ◇ (x ◇ z)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3958,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = (y ◇ (x ◇ z)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3989,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = (z ◇ (x ◇ x)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 3997,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = (z ◇ (x ◇ z)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 0,
+    "z": 5
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4001,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ y = (z ◇ (x ◇ w)) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 1,
+    "y": 0,
+    "z": 0,
+    "w": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4282,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ (x ◇ y) = x ◇ (x ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4314,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ (y ◇ x) = x ◇ (y ◇ y)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 3
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4315,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ (y ◇ x) = x ◇ (y ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4339,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ (y ◇ y) = x ◇ (y ◇ z)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4357,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "x ◇ (y ◇ z) = x ◇ (y ◇ w)",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "w": 2
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4615,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "(x ◇ x) ◇ y = (z ◇ x) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4645,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "(x ◇ y) ◇ x = (z ◇ y) ◇ x",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4666,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "(x ◇ y) ◇ y = (z ◇ y) ◇ y",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "closed": true
+  },
+  {
+   "from": 2164,
+   "to": 4689,
+   "hyp_text": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "tgt_text": "(x ◇ y) ◇ z = (w ◇ y) ◇ z",
+   "lib_refutes": true,
+   "naive_refutes": true,
+   "naive_counterexample": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+   },
+   "closed": true
+  }
+ ],
+ "structural_theorem": {
+  "statement": "E168 <=> E1487 <=> E2164 <=> (S), where (S) is: the operation is surjective AND for every x, Im(R_x) <> Im(L_x) = {x}.",
+  "proof_sketch": [
+   "In E1487 / E2164 / E168 the right-hand side is a product, so every x lies in the image of <>; hence <> is surjective (I = M).",
+   "With I = M, z<>w in E1487 ranges over all of M, so the right factor x<>(z<>w) ranges over Im(L_x) exactly, and the left factor y<>x over Im(R_x). The law becomes (S).",
+   "Same for E2164: with I = M, y<>z ranges over M, so ((y<>z)<>x) ranges over Im(R_x) and x<>w over Im(L_x).",
+   "Conversely (S) plus surjectivity re-inserts every term of each law into Im(R_x) x Im(L_x), so each law holds.",
+   "E168 = x = (y<>x)<>(x<>z) is literally the same normal form, so all three laws coincide."
+  ],
+  "general_implication_graph_agrees": {
+   "bit(168,1487)": 1,
+   "bit(1487,168)": 1,
+   "bit(168,2164)": 1,
+   "bit(2164,168)": 1
+  }
+ },
+ "model_census": {
+  "note": "number of magmas of carrier n satisfying E1487 (= E2164 = (S)). n<=4 by brute force over all n^(n*n) tables; n>=5 by Z3 one-hot encoding.",
+  "n=1": {
+   "count": 1,
+   "note": "trivial one-point magma; satisfies and refutes nothing"
+  },
+  "n=2": {
+   "count": 0
+  },
+  "n=3": {
+   "count": 0
+  },
+  "n=4": {
+   "count": 12,
+   "iso_classes": 1,
+   "note": "all 12 labellings of the swap magma (p,q)<>(r,s)=(q,r) on A x A, |A|=2"
+  },
+  "n=5": {
+   "count": 0
+  },
+  "n=6": {
+   "count": 0
+  },
+  "n=7": {
+   "count": 0
+  },
+  "n=8": {
+   "count": 0
+  },
+  "n=9": {
+   "count": ">=2 iso classes",
+   "note": "swap magma on A x A with |A|=3, plus the Refutation899 table; canonical forms differ"
+  },
+  "minimum_nontrivial_carrier": 4,
+  "minimum_refuting_carrier": 9
+ },
+ "negative_results": {
+  "swap_family": "Sw(k): M = A x A, (p,q)<>(r,s) = (q,r). Satisfies E1487/E2164 for every k, and SATISFIES all 24 target laws for k = 1..6. So this whole parametric family is structurally incapable of separating these pairs.",
+  "why": "In Sw(k), Im(R_x) = A x {q} and Im(L_x) = {q} x A, so every law that is a left/right-invariance law reads 'x<>(...) is independent of ...' and becomes true."
+ }
+}

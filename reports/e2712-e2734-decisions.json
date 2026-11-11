@@ -1,0 +1,233 @@
+{
+ "generated_at": "2026-11-10",
+ "author": "e2126-analyzer",
+ "encoding": {
+  "method": "one-hot boolean encoding (scripts/e2712_e2734/onehot.py)",
+  "note": "不开 Array/Store/Select；每格 n 个布尔变量，项求值返回取值指示向量，select 用 n^2 个合取展开",
+  "symmetry_breaking": "first_occurrence(): c[0][0] 真 + 值 v 只能在 v-1 出现后出现（只删同构副本）",
+  "validation": "与数组编码 ground.py 及暴力全枚举的模型计数完全一致；对称性破除在已知 unsat 情形仍判 unsat（n=5 由 2.0s 降到 0.2s，n=6 由 2.6s 降到 0.1s）"
+ },
+ "dual_path": {
+  "naive_evaluator": "scripts/e2126/naive_lib.py（不 import etp_magma_lib，自建解析器）",
+  "parse_agreement": "4694/4694 laws, 0 mismatches",
+  "evaluation_agreement": "187760 checks over 40 tables x 4694 laws, 0 mismatches"
+ },
+ "reductions": {
+  "E2712": "E2712 ⟹ M = M◇M；于是 E2285 ⟺ E2488 ⟺ ∀x,v:(x◇v)◇x=x，且 E2452 ⟸ 同一条。搜索用 2 变量小析取 ∃x,v:(x◇v)◇x≠x",
+  "E2734": "E2734 ⟹ 平方映射 σ(x)=x◇x 单射，有限载体上双射 ⟹ S=M"
+ },
+ "verdicts": [
+  {
+   "hyp": 2712,
+   "targets": [
+    2285,
+    2452,
+    2488
+   ],
+   "condition": "∃x,v:(x◇v)◇x≠x",
+   "n": 4,
+   "status": "unsat",
+   "secs": 4.0,
+   "encoding": "array"
+  },
+  {
+   "hyp": 2712,
+   "targets": [
+    2285,
+    2452,
+    2488
+   ],
+   "condition": "∃x,v:(x◇v)◇x≠x",
+   "n": 5,
+   "status": "unsat",
+   "secs": 2.0,
+   "encoding": "onehot"
+  },
+  {
+   "hyp": 2712,
+   "targets": [
+    2285,
+    2452,
+    2488
+   ],
+   "condition": "∃x,v:(x◇v)◇x≠x",
+   "n": 6,
+   "status": "unsat",
+   "secs": 72.4,
+   "encoding": "onehot"
+  },
+  {
+   "hyp": 2712,
+   "targets": [
+    2285,
+    2452,
+    2488
+   ],
+   "condition": "∃x,v:(x◇v)◇x≠x",
+   "n": 7,
+   "status": "unsat",
+   "secs": 3.5,
+   "encoding": "onehot+SB"
+  },
+  {
+   "hyp": 2712,
+   "targets": [
+    2285,
+    2452,
+    2488
+   ],
+   "condition": "∃x,v:(x◇v)◇x≠x",
+   "n": 8,
+   "status": "unsat",
+   "secs": 22.9,
+   "encoding": "onehot+SB"
+  },
+  {
+   "hyp": 2712,
+   "targets": [
+    2285,
+    2452,
+    2488
+   ],
+   "condition": "∃x,v:(x◇v)◇x≠x",
+   "n": 9,
+   "status": "unsat",
+   "secs": 87.0,
+   "encoding": "onehot+SB"
+  },
+  {
+   "hyp": 2712,
+   "targets": [
+    2285,
+    2452,
+    2488
+   ],
+   "condition": "∃x,v:(x◇v)◇x≠x",
+   "n": 10,
+   "status": "pending_600s",
+   "secs": null,
+   "encoding": "onehot+SB"
+  },
+  {
+   "hyp": 2712,
+   "targets": [
+    2285
+   ],
+   "condition": "原式（未化简）",
+   "n": 4,
+   "status": "unknown",
+   "secs": 55.1,
+   "encoding": "array"
+  },
+  {
+   "hyp": 2734,
+   "targets": [
+    4273
+   ],
+   "condition": "¬E4273",
+   "n": 4,
+   "status": "unsat",
+   "secs": 0.1,
+   "encoding": "array"
+  },
+  {
+   "hyp": 2734,
+   "targets": [
+    4273
+   ],
+   "condition": "¬E4273",
+   "n": 6,
+   "status": "unsat",
+   "secs": 2.6,
+   "encoding": "onehot"
+  },
+  {
+   "hyp": 2734,
+   "targets": [
+    4273
+   ],
+   "condition": "¬E4273",
+   "n": 7,
+   "status": "unsat",
+   "secs": 87.2,
+   "encoding": "onehot"
+  },
+  {
+   "hyp": 2734,
+   "targets": [
+    4273
+   ],
+   "condition": "¬E4273",
+   "n": 8,
+   "status": "unsat",
+   "secs": 0.5,
+   "encoding": "onehot+SB"
+  },
+  {
+   "hyp": 2734,
+   "targets": [
+    4273
+   ],
+   "condition": "¬E4273",
+   "n": 9,
+   "status": "unsat",
+   "secs": 1.5,
+   "encoding": "onehot+SB"
+  },
+  {
+   "hyp": 2734,
+   "targets": [
+    4273
+   ],
+   "condition": "¬E4273",
+   "n": 10,
+   "status": "unsat",
+   "secs": 9.7,
+   "encoding": "onehot+SB"
+  },
+  {
+   "hyp": 2734,
+   "targets": [
+    4273
+   ],
+   "condition": "¬E4273",
+   "n": 11,
+   "status": "pending_600s",
+   "secs": null,
+   "encoding": "onehot+SB"
+  }
+ ],
+ "lower_bounds": {
+  "E2712_to_2285_2452_2488": "最小反例载体 ≥ 10（n=4..9 全部 unsat；n=10 未决）",
+  "E2734_to_4273": "最小反例载体 ≥ 11（n=4,6,7,8,9,10 全部 unsat；n=11 未决）"
+ },
+ "model_census": {
+  "E2712": {
+   "2": 3,
+   "3": 21
+  },
+  "E2734": {
+   "2": 0,
+   "3": 1,
+   "4": 2,
+   "5": 30
+  },
+  "note": "全部穷举；E2734 的 n=3 唯一模型即 Z/3 上 Steiner 拟群 x◇y = -(x+y)"
+ },
+ "excluded_axes": [
+  {
+   "axis": "替换桥接（把变量换成项得到假设律的更强律）",
+   "why": "E2712 的 21 条、E2734 的 37 条更强律全部也蕴含对应目标，模型集合是目标的子集，结构性无效",
+   "exhaustive": true
+  },
+  {
+   "axis": "§5.6 常系数仿射扩张",
+   "why": "纤维系数比较迫使 α=0、β=I 唯一；此时余圈条件化为 c(B(B(y,x),B(y,z)),x)=0，而三条目标被要求为零的位置集合全部被它包含（24/24 基岩实测），分离只能来自基岩本身",
+   "exhaustive": "对常系数成立；扭转（α,β 随基对变化）未覆盖"
+  },
+  {
+   "axis": "拟群型构造（基与纤维都是拟群）",
+   "why": "E2712 无拟群模型（n≥2）：拟群下行满射迫使所有元素都是左恒等，退化到左投影"
+  }
+ ]
+}

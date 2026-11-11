@@ -1,0 +1,172 @@
+[
+ {
+  "file": "Refutation889.lean",
+  "carrier": 6,
+  "sat_count": 1,
+  "ref_count": 1,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 2,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation895.lean",
+  "carrier": 8,
+  "sat_count": 1,
+  "ref_count": 7,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 8,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation899.lean",
+  "carrier": 9,
+  "sat_count": 1,
+  "ref_count": 12,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 13,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation913.lean",
+  "carrier": 8,
+  "sat_count": 1,
+  "ref_count": 3,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 4,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation923.lean",
+  "carrier": 21,
+  "sat_count": 1,
+  "ref_count": 15,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 16,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation924.lean",
+  "carrier": 21,
+  "sat_count": 1,
+  "ref_count": 16,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 17,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation929.lean",
+  "carrier": 21,
+  "sat_count": 1,
+  "ref_count": 1,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 2,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation930.lean",
+  "carrier": 12,
+  "sat_count": 1,
+  "ref_count": 1,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 2,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation931.lean",
+  "carrier": 25,
+  "sat_count": 1,
+  "ref_count": 1,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 2,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation932.lean",
+  "carrier": 21,
+  "sat_count": 1,
+  "ref_count": 2,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 3,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation933.lean",
+  "carrier": 19,
+  "sat_count": 1,
+  "ref_count": 1,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 2,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation934.lean",
+  "carrier": 24,
+  "sat_count": 1,
+  "ref_count": 1,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 2,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation935.lean",
+  "carrier": 36,
+  "sat_count": 1,
+  "ref_count": 2,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 3,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation936.lean",
+  "carrier": 36,
+  "sat_count": 1,
+  "ref_count": 1,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 2,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation937.lean",
+  "carrier": 35,
+  "sat_count": 1,
+  "ref_count": 1,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 2,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation938.lean",
+  "carrier": 65,
+  "sat_count": 1,
+  "ref_count": 2,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 3,
+  "all_ok": true
+ },
+ {
+  "file": "Refutation939.lean",
+  "carrier": 15,
+  "sat_count": 1,
+  "ref_count": 4,
+  "satisfied_laws_failed": [],
+  "refuted_laws_failed": [],
+  "checks_performed": 5,
+  "all_ok": true
+ }
+]

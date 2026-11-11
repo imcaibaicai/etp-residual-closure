@@ -1,0 +1,7026 @@
+{
+ "generator": "scripts/submission/build_witnesses.py",
+ "sources": {
+  "residual_list": "$ETP_HOME/parsimagma/data/etp/finite_uncovered.txt",
+  "reverse_index": "reports\\submission\\reverse_index_all\\reverse_index.json",
+  "laws": "$ETP_HOME/parsimagma/data/etp/equations.txt",
+  "corpus": "$ETP_HOME/etp-refutations-all"
+ },
+ "method": "每对取一个见证表：优先非转置、其次载体最小。三条独立求值路径（栈机、朴素递归、etp_magma_lib）必须同时同意「满足假设、反驳目标、且给出同一个反例赋值」，任一条不同意即记入 conflicts 并中止。",
+ "leads_histogram": {
+  "substitution_bridge": 104,
+  "published_facts_index": 83,
+  "published_table_sweep": 65,
+  "corpus_full_sweep": 7,
+  "ext_parameters": 4,
+  "dual_transpose": 1
+ },
+ "totals": {
+  "pairs": 264,
+  "agreement_true": 264,
+  "transpose_witnesses": 24,
+  "distinct_tables": 31,
+  "conflicts": 0
+ },
+ "records": [
+  {
+   "from": 168,
+   "to": 3462,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3463,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3521,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 4
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3522,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3523,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3532,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ x)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3533,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ y)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3534,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3535,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ w)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3864,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = (x ◇ (x ◇ y)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3883,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = (y ◇ (x ◇ z)) ◇ x",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3915,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (x ◇ (x ◇ x)) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3921,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (x ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3958,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (y ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3989,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ x)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 3997,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 5
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4001,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ w)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4282,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (x ◇ y) = x ◇ (x ◇ z)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4314,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4315,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4339,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (y ◇ y) = x ◇ (y ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4357,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (y ◇ z) = x ◇ (y ◇ w)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4615,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ x) ◇ y = (z ◇ x) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4645,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ y) ◇ x = (z ◇ y) ◇ x",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4666,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ y) ◇ y = (z ◇ y) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 168,
+   "to": 4689,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ y) ◇ z = (w ◇ y) ◇ z",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 873,
+   "to": 880,
+   "set": "saturation_refuted",
+   "from_law": "x = y ◇ ((x ◇ x) ◇ (y ◇ y))",
+   "to_law": "x = y ◇ ((x ◇ y) ◇ (x ◇ y))",
+   "leads": "corpus_full_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation913.lean",
+    "carrier": 8,
+    "is_transpose": false,
+    "sha256": "a7151d953fce5d0eeddf2a45634f226ccc609b6de74704b7d5655d4a2ea4b912"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 873,
+   "to": 4588,
+   "set": "saturation_refuted",
+   "from_law": "x = y ◇ ((x ◇ x) ◇ (y ◇ y))",
+   "to_law": "(x ◇ x) ◇ x = (y ◇ x) ◇ y",
+   "leads": "corpus_full_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation913.lean",
+    "carrier": 8,
+    "is_transpose": false,
+    "sha256": "a7151d953fce5d0eeddf2a45634f226ccc609b6de74704b7d5655d4a2ea4b912"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 873,
+   "to": 4647,
+   "set": "saturation_refuted",
+   "from_law": "x = y ◇ ((x ◇ x) ◇ (y ◇ y))",
+   "to_law": "(x ◇ y) ◇ x = (z ◇ y) ◇ z",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation913.lean",
+    "carrier": 8,
+    "is_transpose": false,
+    "sha256": "a7151d953fce5d0eeddf2a45634f226ccc609b6de74704b7d5655d4a2ea4b912"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1110,
+   "to": 1629,
+   "set": "saturation_refuted",
+   "from_law": "x = y ◇ ((y ◇ (x ◇ x)) ◇ y)",
+   "to_law": "x = (x ◇ x) ◇ ((x ◇ x) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation931.lean",
+    "carrier": 25,
+    "is_transpose": false,
+    "sha256": "217ba703955808fc9111953c512b2b6be29a26e6bd7c2ab07cb5be960dd2c34b"
+   },
+   "refutation_assignment": {
+    "x": 1
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 151,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 152,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 166,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 167,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 168,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1427,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ (x ◇ y))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1428,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ (y ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1430,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ (y ◇ z))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1479,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (x ◇ y))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1480,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (x ◇ z))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1481,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (y ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1483,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (y ◇ z))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1484,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ x))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1485,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ y))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 1487,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "w": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2035,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((x ◇ x) ◇ x) ◇ (x ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2036,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((x ◇ x) ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2050,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((x ◇ y) ◇ x) ◇ (x ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2051,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((x ◇ y) ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2052,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((x ◇ y) ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2087,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ x) ◇ x) ◇ (x ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2088,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ x) ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2089,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ x) ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2124,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2125,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2126,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2161,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2162,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2163,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 2164,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3456,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = x ◇ ((x ◇ x) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3457,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = x ◇ ((x ◇ x) ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3461,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3462,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3463,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3511,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((x ◇ y) ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3512,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((x ◇ y) ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3513,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((x ◇ y) ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3521,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 4
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3522,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3523,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3532,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3533,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3534,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3535,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ w)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3862,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = (x ◇ (x ◇ x)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation929.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "b3372fd4b80b54c642d488c4bb094185c112da8a2d78887a9af06c814ebc856b"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3864,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = (x ◇ (x ◇ y)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3877,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = (y ◇ (x ◇ x)) ◇ x",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation929.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "b3372fd4b80b54c642d488c4bb094185c112da8a2d78887a9af06c814ebc856b"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3880,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = (y ◇ (x ◇ y)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 5
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3883,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ x = (y ◇ (x ◇ z)) ◇ x",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3915,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (x ◇ (x ◇ x)) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3918,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (x ◇ (x ◇ y)) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3921,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (x ◇ (x ◇ z)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3952,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (y ◇ (x ◇ x)) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 5
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3955,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (y ◇ (x ◇ y)) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3958,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (y ◇ (x ◇ z)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3989,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (z ◇ (x ◇ x)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3993,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (z ◇ (x ◇ y)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "59f72701d4715cd01799f4babcb1dd8e0627c67b357445bde5c827c250352f49"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 3997,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (z ◇ (x ◇ z)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 5
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4001,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ y = (z ◇ (x ◇ w)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4268,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ (x ◇ x) = x ◇ (x ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4282,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ (x ◇ y) = x ◇ (x ◇ z)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4314,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4315,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4339,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ (y ◇ y) = x ◇ (y ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4357,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "x ◇ (y ◇ z) = x ◇ (y ◇ w)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4587,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "(x ◇ x) ◇ x = (y ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4606,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "(x ◇ x) ◇ y = (y ◇ x) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4615,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "(x ◇ x) ◇ y = (z ◇ x) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4645,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "(x ◇ y) ◇ x = (z ◇ y) ◇ x",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4666,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "(x ◇ y) ◇ y = (z ◇ y) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1486,
+   "to": 4689,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "to_law": "(x ◇ y) ◇ z = (w ◇ y) ◇ z",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3463,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3521,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ x)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 4
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3522,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ y)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3523,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3532,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ x)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3533,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ y)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3534,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3535,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ w)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3883,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ x = (y ◇ (x ◇ z)) ◇ x",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3915,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = (x ◇ (x ◇ x)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3921,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = (x ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3958,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = (y ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3989,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = (z ◇ (x ◇ x)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 3997,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = (z ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 5
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4001,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ y = (z ◇ (x ◇ w)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4282,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ (x ◇ y) = x ◇ (x ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4314,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ y)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4315,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4339,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ (y ◇ y) = x ◇ (y ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4357,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "x ◇ (y ◇ z) = x ◇ (y ◇ w)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4615,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "(x ◇ x) ◇ y = (z ◇ x) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4645,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "(x ◇ y) ◇ x = (z ◇ y) ◇ x",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4666,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "(x ◇ y) ◇ y = (z ◇ y) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1487,
+   "to": 4689,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "to_law": "(x ◇ y) ◇ z = (w ◇ y) ◇ z",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 151,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 152,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 166,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 167,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 168,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1426,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ (x ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1427,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ (x ◇ y))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1428,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ (y ◇ x))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1429,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ (y ◇ y))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1430,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (x ◇ x) ◇ (x ◇ (y ◇ z))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1478,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (x ◇ x))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1479,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (x ◇ y))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1480,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (x ◇ z))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1481,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (y ◇ x))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1482,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (y ◇ y))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1483,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (y ◇ z))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1484,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ x))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1485,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ y))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1486,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ z))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 1487,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = (y ◇ x) ◇ (x ◇ (z ◇ w))",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2050,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((x ◇ y) ◇ x) ◇ (x ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 8
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2051,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((x ◇ y) ◇ x) ◇ (x ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 8
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2052,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((x ◇ y) ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 8,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2087,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((y ◇ x) ◇ x) ◇ (x ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 18
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2088,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((y ◇ x) ◇ x) ◇ (x ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 18
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2089,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((y ◇ x) ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 18,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2161,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 8
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2162,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 8
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2163,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 8
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 2164,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 0,
+    "z": 8
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3456,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = x ◇ ((x ◇ x) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation929.lean#T",
+    "carrier": 21,
+    "is_transpose": true,
+    "sha256": "fb89222b8377fc805e2ccac62425755374658f0a821b147482059a79eb355a50"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3457,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = x ◇ ((x ◇ x) ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation929.lean#T",
+    "carrier": 21,
+    "is_transpose": true,
+    "sha256": "fb89222b8377fc805e2ccac62425755374658f0a821b147482059a79eb355a50"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3461,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3462,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3463,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3511,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((x ◇ y) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean#T",
+    "carrier": 21,
+    "is_transpose": true,
+    "sha256": "8e361a63bcc6534851b49bffe99fe918d1e745322d0568439ffbe1497963a4b6"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3512,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((x ◇ y) ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean#T",
+    "carrier": 21,
+    "is_transpose": true,
+    "sha256": "8e361a63bcc6534851b49bffe99fe918d1e745322d0568439ffbe1497963a4b6"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3513,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((x ◇ y) ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation924.lean#T",
+    "carrier": 21,
+    "is_transpose": true,
+    "sha256": "8e361a63bcc6534851b49bffe99fe918d1e745322d0568439ffbe1497963a4b6"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3521,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 4
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3522,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3523,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3532,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ x)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3533,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ y)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3534,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3535,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ w)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3862,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = (x ◇ (x ◇ x)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3864,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = (x ◇ (x ◇ y)) ◇ x",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3877,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = (y ◇ (x ◇ x)) ◇ x",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3880,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = (y ◇ (x ◇ y)) ◇ x",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 5
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3883,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ x = (y ◇ (x ◇ z)) ◇ x",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3915,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (x ◇ (x ◇ x)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3918,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (x ◇ (x ◇ y)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3921,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (x ◇ (x ◇ z)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3952,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (y ◇ (x ◇ x)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 5
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3955,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (y ◇ (x ◇ y)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3958,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (y ◇ (x ◇ z)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3989,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ x)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3993,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ y)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation923.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "ad2878145ed6940c2a0d8b4a80aa0f410b1ae4e8613a54b06a07bab6252d6305"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 3,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 3997,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ z)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 5
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4001,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ w)) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4268,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (x ◇ x) = x ◇ (x ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4282,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (x ◇ y) = x ◇ (x ◇ z)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4314,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4315,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4339,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (y ◇ y) = x ◇ (y ◇ z)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4357,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "x ◇ (y ◇ z) = x ◇ (y ◇ w)",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4587,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ x) ◇ x = (y ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4606,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ x) ◇ y = (y ◇ x) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4615,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ x) ◇ y = (z ◇ x) ◇ y",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4645,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ y) ◇ x = (z ◇ y) ◇ x",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4666,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ y) ◇ y = (z ◇ y) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2126,
+   "to": 4689,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ x) ◇ (x ◇ z)",
+   "to_law": "(x ◇ y) ◇ z = (w ◇ y) ◇ z",
+   "leads": "substitution_bridge",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 5,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3463,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ x = x ◇ ((y ◇ x) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3521,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ x)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 4
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3522,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ y)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3523,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = x ◇ ((y ◇ y) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3532,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ x)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3533,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ y)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3534,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3535,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = x ◇ ((z ◇ y) ◇ w)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3883,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ x = (y ◇ (x ◇ z)) ◇ x",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3921,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = (x ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3958,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = (y ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3989,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ x)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 3997,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ z)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 1,
+    "y": 0,
+    "z": 5
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4001,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ y = (z ◇ (x ◇ w)) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 2,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4282,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ (x ◇ y) = x ◇ (x ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 2,
+    "y": 0,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4314,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ y)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 3
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4315,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ (y ◇ x) = x ◇ (y ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4339,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ (y ◇ y) = x ◇ (y ◇ z)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4357,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "x ◇ (y ◇ z) = x ◇ (y ◇ w)",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 0,
+    "y": 1,
+    "z": 2
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4615,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "(x ◇ x) ◇ y = (z ◇ x) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4645,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "(x ◇ y) ◇ x = (z ◇ y) ◇ x",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4666,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "(x ◇ y) ◇ y = (z ◇ y) ◇ y",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2164,
+   "to": 4689,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ z) ◇ x) ◇ (x ◇ w)",
+   "to_law": "(x ◇ y) ◇ z = (w ◇ y) ◇ z",
+   "leads": "published_table_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation899.lean",
+    "carrier": 9,
+    "is_transpose": false,
+    "sha256": "1fd5788a13489a43b4011b8df415fa100b2683dd7c376a1c16fcddec2e2566f4"
+   },
+   "refutation_assignment": {
+    "w": 0,
+    "x": 1,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2497,
+   "to": 1832,
+   "set": "saturation_refuted",
+   "from_law": "x = (y ◇ ((x ◇ x) ◇ y)) ◇ y",
+   "to_law": "x = (x ◇ (x ◇ x)) ◇ (x ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation931.lean#T",
+    "carrier": 25,
+    "is_transpose": true,
+    "sha256": "4381f20f9edc446d28ded03d7d6379ede064031fcc5bcb51e3628105813d0326"
+   },
+   "refutation_assignment": {
+    "x": 1
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2734,
+   "to": 4273,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ (x ◇ x)) ◇ y",
+   "to_law": "x ◇ (x ◇ x) = y ◇ (x ◇ y)",
+   "leads": "corpus_full_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation895.lean",
+    "carrier": 8,
+    "is_transpose": false,
+    "sha256": "619d3da783a0d9393dc5df273ccf887ea272fcf9d3b9a84baf2e9df9080ff6dd"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2734,
+   "to": 4332,
+   "set": "saturation_refuted",
+   "from_law": "x = ((y ◇ y) ◇ (x ◇ x)) ◇ y",
+   "to_law": "x ◇ (y ◇ x) = z ◇ (y ◇ z)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation895.lean",
+    "carrier": 8,
+    "is_transpose": false,
+    "sha256": "619d3da783a0d9393dc5df273ccf887ea272fcf9d3b9a84baf2e9df9080ff6dd"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 0,
+    "z": 1
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 3558,
+   "to": 4065,
+   "set": "saturation_refuted",
+   "from_law": "x ◇ y = y ◇ ((y ◇ y) ◇ x)",
+   "to_law": "x ◇ x = ((x ◇ x) ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation889.lean",
+    "carrier": 6,
+    "is_transpose": false,
+    "sha256": "bb61e3e8d269a8022339816ec52c57703fcc83526b5f02b63dd1d9e1d3c34b0a"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 476,
+   "to": 359,
+   "set": "unresolved",
+   "from_law": "x = y ◇ (x ◇ (y ◇ (y ◇ x)))",
+   "to_law": "x ◇ x = (x ◇ x) ◇ x",
+   "leads": "ext_parameters",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation936.lean",
+    "carrier": 36,
+    "is_transpose": false,
+    "sha256": "767bfe17ea457368bf34e50c1d4f13c6328519d0f520858f45ddbcf803b2860b"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 476,
+   "to": 4065,
+   "set": "unresolved",
+   "from_law": "x = y ◇ (x ◇ (y ◇ (y ◇ x)))",
+   "to_law": "x ◇ x = ((x ◇ x) ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation936.lean",
+    "carrier": 36,
+    "is_transpose": false,
+    "sha256": "767bfe17ea457368bf34e50c1d4f13c6328519d0f520858f45ddbcf803b2860b"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 503,
+   "to": 359,
+   "set": "unresolved",
+   "from_law": "x = y ◇ (y ◇ (x ◇ (y ◇ x)))",
+   "to_law": "x ◇ x = (x ◇ x) ◇ x",
+   "leads": "ext_parameters",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation935.lean",
+    "carrier": 36,
+    "is_transpose": false,
+    "sha256": "3145e20bbdf22687ebe0775338c2006bfb3ba4f65e693d90ab9c3e4f0b7b5273"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 503,
+   "to": 3862,
+   "set": "unresolved",
+   "from_law": "x = y ◇ (y ◇ (x ◇ (y ◇ x)))",
+   "to_law": "x ◇ x = (x ◇ (x ◇ x)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation935.lean",
+    "carrier": 36,
+    "is_transpose": false,
+    "sha256": "3145e20bbdf22687ebe0775338c2006bfb3ba4f65e693d90ab9c3e4f0b7b5273"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 503,
+   "to": 4065,
+   "set": "unresolved",
+   "from_law": "x = y ◇ (y ◇ (x ◇ (y ◇ x)))",
+   "to_law": "x ◇ x = ((x ◇ x) ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation935.lean",
+    "carrier": 36,
+    "is_transpose": false,
+    "sha256": "3145e20bbdf22687ebe0775338c2006bfb3ba4f65e693d90ab9c3e4f0b7b5273"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 854,
+   "to": 413,
+   "set": "unresolved",
+   "from_law": "x = x ◇ ((y ◇ z) ◇ (x ◇ z))",
+   "to_law": "x = x ◇ (x ◇ (x ◇ (y ◇ x)))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation933.lean",
+    "carrier": 19,
+    "is_transpose": false,
+    "sha256": "621912dcc4edfd3be06f492b7a097ff71cfa33c23d2a9571027d17ddfc31e7ad"
+   },
+   "refutation_assignment": {
+    "x": 11,
+    "y": 6
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 854,
+   "to": 1045,
+   "set": "unresolved",
+   "from_law": "x = x ◇ ((y ◇ z) ◇ (x ◇ z))",
+   "to_law": "x = x ◇ ((y ◇ (y ◇ x)) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation934.lean",
+    "carrier": 24,
+    "is_transpose": false,
+    "sha256": "dc261bc901be70974b10012816f3d7bf08990dfcdafb56d5423b494948ee20f4"
+   },
+   "refutation_assignment": {
+    "x": 19,
+    "y": 12
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 854,
+   "to": 1055,
+   "set": "unresolved",
+   "from_law": "x = x ◇ ((y ◇ z) ◇ (x ◇ z))",
+   "to_law": "x = x ◇ ((y ◇ (z ◇ x)) ◇ x)",
+   "leads": "corpus_full_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation934.lean",
+    "carrier": 24,
+    "is_transpose": false,
+    "sha256": "dc261bc901be70974b10012816f3d7bf08990dfcdafb56d5423b494948ee20f4"
+   },
+   "refutation_assignment": {
+    "x": 19,
+    "y": 2,
+    "z": 20
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 854,
+   "to": 1067,
+   "set": "unresolved",
+   "from_law": "x = x ◇ ((y ◇ z) ◇ (x ◇ z))",
+   "to_law": "x = x ◇ ((y ◇ (z ◇ w)) ◇ x)",
+   "leads": "corpus_full_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation870.lean",
+    "carrier": 11,
+    "is_transpose": false,
+    "sha256": "aee9e49403effc17d46475f661c76348b0ed9b5988bfced40e099bff7aa30fbc"
+   },
+   "refutation_assignment": {
+    "w": 1,
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 8,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 854,
+   "to": 3316,
+   "set": "unresolved",
+   "from_law": "x = x ◇ ((y ◇ z) ◇ (x ◇ z))",
+   "to_law": "x ◇ y = x ◇ (y ◇ (x ◇ y))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation932.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "29569f23b39f0c9efeb966897b6613037ef02869b8a8ebfd8cba4f0c5a457e92"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 16
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 854,
+   "to": 3925,
+   "set": "unresolved",
+   "from_law": "x = x ◇ ((y ◇ z) ◇ (x ◇ z))",
+   "to_law": "x ◇ y = (x ◇ (y ◇ x)) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation932.lean",
+    "carrier": 21,
+    "is_transpose": false,
+    "sha256": "29569f23b39f0c9efeb966897b6613037ef02869b8a8ebfd8cba4f0c5a457e92"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 16
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 879,
+   "to": 4065,
+   "set": "unresolved",
+   "from_law": "x = y ◇ ((x ◇ y) ◇ (x ◇ x))",
+   "to_law": "x ◇ x = ((x ◇ x) ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation930.lean",
+    "carrier": 12,
+    "is_transpose": false,
+    "sha256": "bb99d35bc8965ea6006764ab737f3ee1b0e7956b61f4a72b96b0edba05d73dd9"
+   },
+   "refutation_assignment": {
+    "x": 3
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1076,
+   "to": 2294,
+   "set": "unresolved",
+   "from_law": "x = y ◇ ((x ◇ (x ◇ y)) ◇ y)",
+   "to_law": "x = (y ◇ (x ◇ (x ◇ y))) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation938.lean",
+    "carrier": 65,
+    "is_transpose": false,
+    "sha256": "e8407c2684469847e19d9bddce956c54b7df506076399a2690852856a0fe48b1"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 13
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1076,
+   "to": 4435,
+   "set": "unresolved",
+   "from_law": "x = y ◇ ((x ◇ (x ◇ y)) ◇ y)",
+   "to_law": "x ◇ (y ◇ x) = (x ◇ y) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation938.lean",
+    "carrier": 65,
+    "is_transpose": false,
+    "sha256": "e8407c2684469847e19d9bddce956c54b7df506076399a2690852856a0fe48b1"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 13
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1516,
+   "to": 1489,
+   "set": "unresolved",
+   "from_law": "x = (y ◇ y) ◇ (x ◇ (x ◇ y))",
+   "to_law": "x = (y ◇ x) ◇ (y ◇ (x ◇ y))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation937.lean",
+    "carrier": 35,
+    "is_transpose": false,
+    "sha256": "3deb10d70ca5a38a85439f65d2a14c8ad3cda126c2f54c5fc0b99207544674c2"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 7
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1518,
+   "to": 47,
+   "set": "unresolved",
+   "from_law": "x = (y ◇ y) ◇ (x ◇ (y ◇ x))",
+   "to_law": "x = x ◇ (x ◇ (x ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation939.lean",
+    "carrier": 15,
+    "is_transpose": false,
+    "sha256": "37444fb45598367d850d09243887d93dae40835e997ff946ff4695340f79bc7e"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1518,
+   "to": 614,
+   "set": "unresolved",
+   "from_law": "x = (y ◇ y) ◇ (x ◇ (y ◇ x))",
+   "to_law": "x = x ◇ (x ◇ ((x ◇ x) ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation939.lean",
+    "carrier": 15,
+    "is_transpose": false,
+    "sha256": "37444fb45598367d850d09243887d93dae40835e997ff946ff4695340f79bc7e"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1518,
+   "to": 817,
+   "set": "unresolved",
+   "from_law": "x = (y ◇ y) ◇ (x ◇ (y ◇ x))",
+   "to_law": "x = x ◇ ((x ◇ x) ◇ (x ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation939.lean",
+    "carrier": 15,
+    "is_transpose": false,
+    "sha256": "37444fb45598367d850d09243887d93dae40835e997ff946ff4695340f79bc7e"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 1518,
+   "to": 3862,
+   "set": "unresolved",
+   "from_law": "x = (y ◇ y) ◇ (x ◇ (y ◇ x))",
+   "to_law": "x ◇ x = (x ◇ (x ◇ x)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation939.lean",
+    "carrier": 15,
+    "is_transpose": false,
+    "sha256": "37444fb45598367d850d09243887d93dae40835e997ff946ff4695340f79bc7e"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2054,
+   "to": 255,
+   "set": "unresolved",
+   "from_law": "x = ((x ◇ y) ◇ x) ◇ (y ◇ y)",
+   "to_law": "x = ((x ◇ x) ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation939.lean#T",
+    "carrier": 15,
+    "is_transpose": true,
+    "sha256": "306b5d320eead3771a2bb6e6b6c7ed34ed0b9bdc0f46ab8437ad1352129c9874"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2054,
+   "to": 2644,
+   "set": "unresolved",
+   "from_law": "x = ((x ◇ y) ◇ x) ◇ (y ◇ y)",
+   "to_law": "x = ((x ◇ x) ◇ (x ◇ x)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation939.lean#T",
+    "carrier": 15,
+    "is_transpose": true,
+    "sha256": "306b5d320eead3771a2bb6e6b6c7ed34ed0b9bdc0f46ab8437ad1352129c9874"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2054,
+   "to": 2847,
+   "set": "unresolved",
+   "from_law": "x = ((x ◇ y) ◇ x) ◇ (y ◇ y)",
+   "to_law": "x = ((x ◇ (x ◇ x)) ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation939.lean#T",
+    "carrier": 15,
+    "is_transpose": true,
+    "sha256": "306b5d320eead3771a2bb6e6b6c7ed34ed0b9bdc0f46ab8437ad1352129c9874"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2054,
+   "to": 3456,
+   "set": "unresolved",
+   "from_law": "x = ((x ◇ y) ◇ x) ◇ (y ◇ y)",
+   "to_law": "x ◇ x = x ◇ ((x ◇ x) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation939.lean#T",
+    "carrier": 15,
+    "is_transpose": true,
+    "sha256": "306b5d320eead3771a2bb6e6b6c7ed34ed0b9bdc0f46ab8437ad1352129c9874"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2091,
+   "to": 2098,
+   "set": "unresolved",
+   "from_law": "x = ((y ◇ x) ◇ x) ◇ (y ◇ y)",
+   "to_law": "x = ((y ◇ x) ◇ y) ◇ (x ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation937.lean#T",
+    "carrier": 35,
+    "is_transpose": true,
+    "sha256": "4527a307230d71997ae18b7ccacf235b7c4387b8d5dff0ac21ec7089f997a1b1"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 7
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2531,
+   "to": 1313,
+   "set": "unresolved",
+   "from_law": "x = (y ◇ ((y ◇ x) ◇ x)) ◇ y",
+   "to_law": "x = y ◇ (((y ◇ x) ◇ x) ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation938.lean#T",
+    "carrier": 65,
+    "is_transpose": true,
+    "sha256": "d3b3ec5a8b0a745b85689c9e3f601d722641d445fa85144790eb11b33d8ade4f"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 13
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2531,
+   "to": 4435,
+   "set": "unresolved",
+   "from_law": "x = (y ◇ ((y ◇ x) ◇ x)) ◇ y",
+   "to_law": "x ◇ (y ◇ x) = (x ◇ y) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation938.lean#T",
+    "carrier": 65,
+    "is_transpose": true,
+    "sha256": "d3b3ec5a8b0a745b85689c9e3f601d722641d445fa85144790eb11b33d8ade4f"
+   },
+   "refutation_assignment": {
+    "x": 0,
+    "y": 13
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2650,
+   "to": 3253,
+   "set": "unresolved",
+   "from_law": "x = ((x ◇ x) ◇ (y ◇ x)) ◇ y",
+   "to_law": "x ◇ x = x ◇ (x ◇ (x ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation930.lean#T",
+    "carrier": 12,
+    "is_transpose": true,
+    "sha256": "a4d175c6788c5b515d0d4249d548991592efbd7af60ddf1488ba83caf9b46661"
+   },
+   "refutation_assignment": {
+    "x": 3
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2712,
+   "to": 2285,
+   "set": "unresolved",
+   "from_law": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "to_law": "x = (x ◇ (y ◇ (z ◇ w))) ◇ x",
+   "leads": "corpus_full_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation36.lean",
+    "carrier": 11,
+    "is_transpose": false,
+    "sha256": "303b013095dc13f81e66a290cd4e41d79ee3f0c7b8b06dadc4634e6bc5c25dab"
+   },
+   "refutation_assignment": {
+    "w": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "alternative_witnesses": 8,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2712,
+   "to": 2449,
+   "set": "unresolved",
+   "from_law": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "to_law": "x = (x ◇ ((x ◇ y) ◇ y)) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation934.lean#T",
+    "carrier": 24,
+    "is_transpose": true,
+    "sha256": "f71027d6961c076748e858d27d3c35956e2cacf5ad6119937e578629af0c113e"
+   },
+   "refutation_assignment": {
+    "x": 19,
+    "y": 12
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2712,
+   "to": 2452,
+   "set": "unresolved",
+   "from_law": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "to_law": "x = (x ◇ ((x ◇ y) ◇ z)) ◇ x",
+   "leads": "dual_transpose",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation934.lean#T",
+    "carrier": 24,
+    "is_transpose": true,
+    "sha256": "f71027d6961c076748e858d27d3c35956e2cacf5ad6119937e578629af0c113e"
+   },
+   "refutation_assignment": {
+    "x": 19,
+    "y": 2,
+    "z": 5
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2712,
+   "to": 2488,
+   "set": "unresolved",
+   "from_law": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "to_law": "x = (x ◇ ((y ◇ z) ◇ w)) ◇ x",
+   "leads": "corpus_full_sweep",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation36.lean",
+    "carrier": 11,
+    "is_transpose": false,
+    "sha256": "303b013095dc13f81e66a290cd4e41d79ee3f0c7b8b06dadc4634e6bc5c25dab"
+   },
+   "refutation_assignment": {
+    "w": 1,
+    "x": 0,
+    "y": 1,
+    "z": 0
+   },
+   "alternative_witnesses": 8,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2712,
+   "to": 3065,
+   "set": "unresolved",
+   "from_law": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "to_law": "x = (((x ◇ y) ◇ x) ◇ x) ◇ x",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation933.lean#T",
+    "carrier": 19,
+    "is_transpose": true,
+    "sha256": "673643c277dd8c98a66e7e33d608fd2d737f073deb70d46578b5756f99cb3ddc"
+   },
+   "refutation_assignment": {
+    "x": 11,
+    "y": 6
+   },
+   "alternative_witnesses": 2,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2712,
+   "to": 3519,
+   "set": "unresolved",
+   "from_law": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "to_law": "x ◇ y = x ◇ ((y ◇ x) ◇ y)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation932.lean#T",
+    "carrier": 21,
+    "is_transpose": true,
+    "sha256": "bbec80f290b7fda6f2f95e869c8731d259b32a4e41ca26dfc67abff53fce0902"
+   },
+   "refutation_assignment": {
+    "x": 16,
+    "y": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 2712,
+   "to": 4128,
+   "set": "unresolved",
+   "from_law": "x = ((y ◇ x) ◇ (y ◇ z)) ◇ x",
+   "to_law": "x ◇ y = ((x ◇ y) ◇ x) ◇ y",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation932.lean#T",
+    "carrier": 21,
+    "is_transpose": true,
+    "sha256": "bbec80f290b7fda6f2f95e869c8731d259b32a4e41ca26dfc67abff53fce0902"
+   },
+   "refutation_assignment": {
+    "x": 16,
+    "y": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 3069,
+   "to": 307,
+   "set": "unresolved",
+   "from_law": "x = (((x ◇ y) ◇ x) ◇ y) ◇ y",
+   "to_law": "x ◇ x = x ◇ (x ◇ x)",
+   "leads": "ext_parameters",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation935.lean#T",
+    "carrier": 36,
+    "is_transpose": true,
+    "sha256": "fe784b0c6566d56eba00c100830e732f9efc50aa12843d5b214c3eccaf5e42e6"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 3069,
+   "to": 3253,
+   "set": "unresolved",
+   "from_law": "x = (((x ◇ y) ◇ x) ◇ y) ◇ y",
+   "to_law": "x ◇ x = x ◇ (x ◇ (x ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation935.lean#T",
+    "carrier": 36,
+    "is_transpose": true,
+    "sha256": "fe784b0c6566d56eba00c100830e732f9efc50aa12843d5b214c3eccaf5e42e6"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 3069,
+   "to": 3456,
+   "set": "unresolved",
+   "from_law": "x = (((x ◇ y) ◇ x) ◇ y) ◇ y",
+   "to_law": "x ◇ x = x ◇ ((x ◇ x) ◇ x)",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation935.lean#T",
+    "carrier": 36,
+    "is_transpose": true,
+    "sha256": "fe784b0c6566d56eba00c100830e732f9efc50aa12843d5b214c3eccaf5e42e6"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 3076,
+   "to": 307,
+   "set": "unresolved",
+   "from_law": "x = (((x ◇ y) ◇ y) ◇ x) ◇ y",
+   "to_law": "x ◇ x = x ◇ (x ◇ x)",
+   "leads": "ext_parameters",
+   "leads_via_dual": false,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation936.lean#T",
+    "carrier": 36,
+    "is_transpose": true,
+    "sha256": "6b45d011bb95b2206c9f9969f767d96725b080c5ea27309c5c68b3e1255930d1"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  },
+  {
+   "from": 3076,
+   "to": 3253,
+   "set": "unresolved",
+   "from_law": "x = (((x ◇ y) ◇ y) ◇ x) ◇ y",
+   "to_law": "x ◇ x = x ◇ (x ◇ (x ◇ x))",
+   "leads": "published_facts_index",
+   "leads_via_dual": true,
+   "witness": {
+    "name": "equational_theories__Generated__All4x4Tables__Refutation936.lean#T",
+    "carrier": 36,
+    "is_transpose": true,
+    "sha256": "6b45d011bb95b2206c9f9969f767d96725b080c5ea27309c5c68b3e1255930d1"
+   },
+   "refutation_assignment": {
+    "x": 0
+   },
+   "alternative_witnesses": 1,
+   "evaluators": [
+    "stack_machine",
+    "naive_recursive",
+    "etp_magma_lib"
+   ],
+   "agreement": true
+  }
+ ]
+}
