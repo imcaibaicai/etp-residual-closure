@@ -141,7 +141,7 @@ called the residual "stuck". It closes like this:
 | dual pair of `(2712, 2452)` | `(854, 1055)` |
 | that pair is separated by | `Refutation934`, 24 elements |
 | so take the transpose of `Refutation934` | sha256 `424a7fc0fd815bee…f381` |
-| the transpose satisfies `E2712` | yes (`x = ((y◇x)◇(y◇z))◇x`) |
+| the transpose satisfies `E2712` | yes (`x = ((y ◇ x) ◇ (y ◇ z)) ◇ x`) |
 | the transpose refutes `E2452` | yes, at `{x:19, y:2, z:5}` |
 
 ## 3. Substitution bridging

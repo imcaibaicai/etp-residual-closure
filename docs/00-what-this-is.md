@@ -6,6 +6,19 @@
 
 ## English
 
+### The one-paragraph version
+
+The Equational Theories Project (ETP) studies 4694 equations in a language with one
+binary operation, and asks which equations imply which. 264 of those implications were
+already known to have a *finite* counterexample, but a companion project's corpus of
+magmas could not produce one for any of them. This repository shows that every one of
+the 264 witnesses was already sitting in ETP's own published table directory, that
+**31 tables cover all 264**, and that the failure was an index keyed on "what a table
+was built for" rather than "what a table satisfies". Everything else here is evidence,
+reproduction, and a playbook for doing that class of work with an AI agent.
+
+Read on only if you want the definitions behind those words.
+
 ### A magma is a set with one binary operation
 
 A *magma* is a set `G` together with a binary operation `◇ : G × G → G`. Nothing
@@ -24,9 +37,9 @@ Theories Project uses (`x ◇ y` for the operation):
 
 | Law number | Text | Meaning |
 |---|---|---|
-| `E1` | `x = x ◇ (y ◇ z)` | this law holds iff every product `y ◇ z` equals `x`, for every `x` — only very small magmas survive |
-| `E168` | `x = (y ◇ x) ◇ (x ◇ z)` | |
-| `E46` | `x = y ◇ y` | every square is the same element, whatever `x` is |
+| `E1` | `x = x` | true in every magma; the weakest of the 4694 |
+| `E4` | `x = x ◇ y` | `x` absorbs everything on the right; the 2-element table below satisfies it |
+| `E168` | `x = (y ◇ x) ◇ (x ◇ z)` | the "mother law" of the family this repository leans on: three residual hypotheses are its literal substitution instances, see [`01-method.md`](01-method.md) §3 |
 
 A law *holds* in a magma when the two sides evaluate to the same element for
 **every** assignment of elements to the variables. This is a finite check: with a
@@ -34,6 +47,29 @@ carrier of size `n` and `k` variables, there are `n^k` assignments, and each one
 a term evaluation. So for a fixed finite magma and a fixed law, satisfaction is
 decidable by brute force, and a *counterexample* is a concrete assignment that
 makes the two sides differ.
+
+### A worked example small enough to check by hand
+
+Take the set `{0, 1}` with `a ◇ b = a`, the left projection. The whole magma is this
+table:
+
+| `◇` | 0 | 1 |
+|---|---|---|
+| **0** | 0 | 0 |
+| **1** | 1 | 1 |
+
+Test two laws against it, with `x, y, z` ranging over `{0, 1}`:
+
+| Law | Left side | Right side | Verdict |
+|---|---|---|---|
+| `E4`: `x = x ◇ y` | `x` | `x ◇ y = x` | holds for all 4 assignments |
+| `E5`: `x = y ◇ x` | `x` | `y ◇ x = y` | fails at `x=0, y=1` |
+
+So this one 2-element table is a finite counterexample to "`E4` implies `E5`": it
+satisfies the hypothesis and refutes the conclusion, witnessed by the assignment
+`x=0, y=1`. That is the entire mechanism of this repository — a table, an assignment,
+and a mechanical check. The 264 pairs differ only in scale: carriers up to 65 elements,
+and 4694 laws to test instead of a handful.
 
 ### The Equational Theories Project
 
@@ -107,6 +143,12 @@ all assignments, and intersect sets of law numbers.
 
 ## 中文版
 
+### 一句话版本
+
+Equational Theories Project（ETP）研究只有一种二元运算的语言里的 4694 条等式，追问哪条蕴含哪条。其中 264 对蕴含**已知存在有限反例**，但姊妹项目的岩浆语料一对都造不出来。本仓库说明：这 264 个见证早已躺在 ETP 自己公开的表目录里，**31 张表覆盖全部 264 对**，出问题的是索引——它按「这张表是为谁造的」建立，而不是按「这张表满足什么」。其余内容是证据、复现步骤，以及一份给 AI Agent 的同类作业手册。
+
+想看清这些词背后的定义，再往下读。
+
 ### 岩浆 = 一个集合 + 一个二元运算
 
 **岩浆**（magma）是一个集合 `G` 配一个二元运算 `◇ : G × G → G`，此外不作任何假设：不要求结合律、不要求单位元、不要求逆元、不要求交换律。**有限岩浆**就是承载集有限的岩浆，它可以被完整写成一张表：`n` 行 `n` 列，每个格子的值在 `0..n-1` 内，第 `(i, j)` 格就是 `i ◇ j`。
@@ -119,11 +161,29 @@ all assignments, and intersect sets of law numbers.
 
 | 律编号 | 文本 | 含义 |
 |---|---|---|
-| `E1` | `x = x ◇ (y ◇ z)` | 该律成立当且仅当对每个 `x` 都有所有乘积 `y ◇ z` 等于 `x`——只有极小的岩浆能活下来 |
-| `E168` | `x = (y ◇ x) ◇ (x ◇ z)` | |
-| `E46` | `x = y ◇ y` | 所有平方都等于同一个元素，与 `x` 无关 |
+| `E1` | `x = x` | 在任何岩浆里都成立；4694 条里最弱的一条 |
+| `E4` | `x = x ◇ y` | `x` 在右侧吸收一切；下面那张 2 元表满足它 |
+| `E168` | `x = (y ◇ x) ◇ (x ◇ z)` | 本仓库倚重的那个「母律」：三条残差假设都是它的字面替换实例，见 [`01-method.md`](01-method.md) §3 |
 
 一条律在某张岩浆里**成立**，指的是：对变量到元素的**任意**赋值，等式两边求值结果都相同。这是有限检查：承载集大小 `n`、变量 `k` 个，就只有 `n^k` 种赋值，每种赋值做一次项求值。所以「给定有限岩浆、给定律，它是否成立」是可判定的，而一个**反例**就是一个具体的赋值，使两边不相等。
+
+### 一个能手算的小例子
+
+取集合 `{0, 1}`，运算定义为 `a ◇ b = a`（左投影）。整张岩浆表就是：
+
+| `◇` | 0 | 1 |
+|---|---|---|
+| **0** | 0 | 0 |
+| **1** | 1 | 1 |
+
+拿两条律在它上面验，`x, y, z` 都取自 `{0, 1}`：
+
+| 律 | 左边 | 右边 | 判定 |
+|---|---|---|---|
+| `E4`：`x = x ◇ y` | `x` | `x ◇ y = x` | 全部 4 种赋值都成立 |
+| `E5`：`x = y ◇ x` | `x` | `y ◇ x = y` | 在 `x=0, y=1` 时失败 |
+
+所以这一张 2 元表就是「`E4` 蕴含 `E5`」的有限反例：它满足假设、反驳结论，见证赋值是 `x=0, y=1`。本仓库的全部机制就是这个——一张表、一个赋值、一次机械检验。264 对的区别只在规模：承载集最大 65 元，要试的律从几条变成 4694 条。
 
 ### ETP 在做什么
 
