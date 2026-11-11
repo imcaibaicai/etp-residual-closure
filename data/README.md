@@ -53,6 +53,10 @@ set of a table is its complement in the 4694.
 
 ## Sizes
 
-Total about 590 KB in 13 files. The two 9 MB graph artifacts are not here:
-[`../scripts/fetch_etp_data.py`](../scripts/fetch_etp_data.py) downloads and decodes them
-into `graph_facts.json`, which is 49 KB.
+Total about 590 KB in 13 files. The two published graphs (9 MB each, from ETP) are
+fetched by [`../scripts/fetch_etp_data.py`](../scripts/fetch_etp_data.py) and decoded
+into `graph_facts.json` (49 KB):
+
+```
+python3 scripts/fetch_etp_data.py --decode
+```

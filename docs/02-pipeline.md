@@ -31,10 +31,9 @@ invariant to check when resuming after an interruption.
 | Finite implication graph | ETP's published `finite_graph.json` | 9.0 MB |
 | Full graph | ETP's published `graph.json` | 9.0 MB |
 
-The two graph artifacts are **not** vendored here;
-[`../scripts/fetch_etp_data.py`](../scripts/fetch_etp_data.py) downloads them and
-decodes them. Only what the decode produces is committed
-([`../data/graph_facts.json`](../data/graph_facts.json)).
+[`../scripts/fetch_etp_data.py`](../scripts/fetch_etp_data.py) downloads both graph
+artifacts and decodes them; what the decode produces is committed as
+[`../data/graph_facts.json`](../data/graph_facts.json).
 
 ## Stage 2 — Decode the finite implication graph
 

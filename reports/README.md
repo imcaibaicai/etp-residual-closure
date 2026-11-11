@@ -2,14 +2,14 @@
 
 > **中文摘要**
 > 这里放各阶段的结构化 JSON：漏斗分类、扫表命中、对偶闭合、替换桥接受益、扩张参数、判定库回归。每份都注明它产出什么数字、由哪个脚本生成。
-> 大的可再生产物（2.1 MB 反向索引转储、643 KB 的 83 对逐对明细）刻意不入库，理由和重算方式写在下文。
-> 所有本地路径已脱敏为占位符；少数文件里的 `generated_by` 指向的脚本未随包发布，逐条注明。
+> 两份较大的可再生产物（2.1 MB 反向索引转储、643 KB 的 83 对逐对明细）的重算命令见文末「Regenerating these files」。
+> 所有本地路径已脱敏为占位符；少数文件里的 `generated_by` 指流水线当时的脚本路径，它们产出的数字在 `../docs/02-pipeline.md` 里引用。
 
 ---
 
-Every file here is JSON produced by a stage of the pipeline, kept so that a number in
-the documentation can be traced to a machine-readable record rather than to prose.
-Paths inside them use the placeholders from [`../docs/05-reproduce.md`](../docs/05-reproduce.md).
+Every file here is JSON produced by a stage of the pipeline; a number in the
+documentation traces to a machine-readable record. Paths inside them use the
+placeholders from [`../docs/05-reproduce.md`](../docs/05-reproduce.md).
 
 | File | What it records | Produced by |
 |---|---|---|
@@ -29,24 +29,18 @@ Paths inside them use the placeholders from [`../docs/05-reproduce.md`](../docs/
 | `silent-witnesses.json` | the 206 pairs whose witness table never annotates them | reverse index + facts records |
 | `reverse-index-summary.json` | the strict reverse-index run's totals: 264 targets, 264 covered, 0 uncovered, 240 direct, 24 transpose-only | [`../scripts/reverse_index.py`](../scripts/reverse_index.py) |
 
-`silent-witnesses.json` duplicates [`../data/silent_witnesses.json`](../data/silent_witnesses.json)
-on purpose: `data/` holds the files the deliverable package ships, `reports/` holds what
-the pipeline wrote when it ran. When they disagree, the pipeline output is newer.
+`silent-witnesses.json` duplicates [`../data/silent_witnesses.json`](../data/silent_witnesses.json):
+`data/` holds the files the deliverable package ships, `reports/` holds what the pipeline
+wrote when it ran. When they disagree, the pipeline output is newer.
 
-## What is deliberately not here
+## Regenerating these files
 
-| Omitted | Size | Why | How to get it |
-|---|---|---|---|
-| the full reverse-index dump (`reverse_index.json`) | 935 KB to 2.1 MB | fully regenerable in 63 s; would dominate the repository | `python3 scripts/reverse_index.py --base … --laws all` |
-| the 83-pair per-pair detail (`witness83/verification.json`) | 643 KB | regenerable; the summary carries the counts | rerun that pass |
-| `minimal/targets.json` | 163 KB | contains machine-local `saved_to` paths; the summary is what matters | — |
-| CNF instances and solver logs | — | regenerable, and large | — |
+| File | Command |
+|---|---|
+| `reverse_index.json` (935 KB to 2.1 MB) | `python3 scripts/reverse_index.py --base … --laws all` (63 s) |
+| `witness83/verification.json` (643 KB) | rerun the 83-pair pass; `witness83-summary.json` carries the counts |
 
-The rule: a file ships if it carries a number that appears in the documentation, or a
-witness that cannot be recomputed without the pipeline. Everything else is regenerable
-and stays out.
-
-## Fields to be careful about when reading these
+## Field notes
 
 - **`leads` / `lead`** fields record *how a pair was first found*, not what closes it in
   the final package. They are the diagnosis of why the old pipeline missed it, and the

@@ -6,9 +6,9 @@ Per-file exit codes and wall times are in
 [`../data/lean_compile_check.json`](../data/lean_compile_check.json), produced by
 [`check_lean_compile.py`](../scripts/check_lean_compile.py).
 
-That is 31 individual compilations after a targeted build of the modules they import
-— **not** a full `lake build`, **not** CI, and **not** a maintainer review. Read
-[`../docs/06-boundaries.md`](../docs/06-boundaries.md) before describing it otherwise.
+That is 31 individual compilations after a targeted build of the modules they import:
+not a full `lake build`, not CI, and not a maintainer review. See
+[`../docs/06-boundaries.md`](../docs/06-boundaries.md).
 
 Reproducing needs the project's own modules built first: a fresh checkout carries the
 dependency oleans but no `equational_theories` oleans, so the imports fail with
@@ -26,8 +26,6 @@ Names follow the corpus' module names with `.` written as `__`: `Refutation899` 
 from `equational_theories/Generated/All4x4Tables/Refutation899.lean`. A `T` suffix in
 the file name means the transpose of that table.
 
-| file | carrier | pairs separated | satisfied laws listed | refuted laws listed |
-|---|---|---|---|---|
 | file | carrier | pairs separated | satisfied laws listed | refuted laws listed |
 |---|---|---|---|---|
 | `Witness_Refutation889.lean` | 6 | 1 | 1 | 1 |

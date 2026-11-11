@@ -1,8 +1,8 @@
 # submission/ — drafts for `carlok/parsimagma`
 
-**Nothing in this directory has been posted.** No issue was opened, no PR was opened, no
-comment was left, and no file in `carlok/parsimagma` was modified. These are drafts, in
-the author's voice, for a human to review and send — or not send.
+**Nothing in this directory has been posted.** No issue or PR was opened, no comment was
+left, and no file in `carlok/parsimagma` was modified. These are drafts in the author's
+voice for a human to review and send.
 
 | File | What it is |
 |---|---|
@@ -27,13 +27,12 @@ The 31 witness tables the drafts refer to are in [`../data/tables_referenced.jso
 
 ## If you are the person who will send these
 
-1. Read [`../docs/06-boundaries.md`](../docs/06-boundaries.md) first. It lists what must
-   not be claimed, and the drafts are only safe to send if you believe it.
+1. [`../docs/06-boundaries.md`](../docs/06-boundaries.md) lists what is not established
+   here; the drafts stay inside those limits.
 2. Check the residual revision. `finite_uncovered.txt` has been regenerated upstream at
    least once; if its row count is no longer 264, the issue text needs its numbers and
    its framing adjusted — the defects hold either way, the counts do not.
 3. Decide about the 16 stale rows separately. The claim that `src/ext.rs` already closes
    16 of the 39 rows on the 1062 side is a bug report on its own, and it is easier to
    accept than a corpus change.
-4. Send it yourself. Nobody should post to someone else's repository on your behalf,
-   and this package deliberately does not automate that.
+4. Send it yourself: posting to someone else's repository is a human decision.

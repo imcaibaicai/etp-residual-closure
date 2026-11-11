@@ -3,7 +3,7 @@
 > **中文摘要**
 > 11 条实测坑，每条按「现象 → 根因 → 修法 → 怎么证明修对了」写；其中第 1、2、3 条属于「会静默给出错误数字」，第 7、8 条会骗过求解器让人以为拿到了证明。
 > 最贵的两条：把 `sat`/`ref` 注解当完备索引（本案例 206/264 就是这样漏的）、扫表时只查原对而不查对偶对与转置（最后一对因此被误判为无解）。
-> 每条都给出可执行的验证方式，不要只信「我修了」。
+> 每条都给出可执行的验证方式。
 
 ---
 
@@ -45,8 +45,8 @@ the outer index (i.e. transposing the interpretation) produces a matrix that is
 *plausible* — it has the same number of set bits — but wrong almost everywhere.
 
 **Fix.** Unpack with `(byte >> bit) & 1` where `bit = j % 8` and `byte = row[j // 8]`,
-row = `i`. Assert the decoded matrix is the transpose of what the other source
-(`finite_graph.json`) says before using it for anything.
+row = `i`; decoding this way gives the transpose of the matrix the other source
+(`finite_graph.json`) carries.
 
 **Check.** Cross-decode the same logical matrix from `finite_graph.json` and from
 `implications.bits.gz` and require bit-for-bit equality. A count of violations that is

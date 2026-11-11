@@ -7,9 +7,8 @@
 
 ---
 
-Nothing in this section was done. It is a description of the work that would be
-required, and of the reasons it might not be accepted, so that the next person does
-not mistake a reproducible package for a merged contribution.
+Nothing in this section was done. It describes the work a merged contribution would
+require, and the reasons it might not be accepted.
 
 ## 1. What "contribution" means in that project
 
@@ -101,13 +100,14 @@ In descending order of plausibility, as a guess about reviewer taste:
   *why* a table satisfies laws its annotation omits; a reviewer will ask.
 - **Open the conversation before the PR.** An issue describing the index defect, with
   the 264 pairs and the 31 tables as evidence, is a cheaper first step than 31 files.
-- **Do not post anything on someone's behalf.** Drafts in [`../submission/`](../submission/)
-  are drafts. Opening them is a human decision.
+- **Posting is a human decision.** Everything in [`../submission/`](../submission/) is a
+  draft.
 
-## 6. What not to claim in an issue or PR
+## 6. What the evidence covers
 
-- "formally verified" — 31 files typecheck individually; nothing is merged;
-- "all 264 pairs proved" — the existence of finite counterexamples was already known;
-- "the project's corpus is wrong" — it is incomplete in a specific, measured way:
-  missing tables, missing transposes, and a query direction that was never asked;
-- "790 is wrong" — that figure was not re-measured here, only the arithmetic around it.
+- 31 files typecheck individually; nothing is merged.
+- The existence of the 264 finite counterexamples was already known — ETP proves it, and
+  `finite_uncovered.txt` records it; the tables supply the witnesses.
+- The corpus is incomplete in specific, measured ways: missing tables, missing
+  transposes, and a query direction that was never asked.
+- The 790 figure was not re-measured here; only the arithmetic around it was checked.

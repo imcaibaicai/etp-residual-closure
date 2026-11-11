@@ -131,7 +131,7 @@ So the fix is not a better solver. It is:
 | the eleven traps that produced wrong answers before they were caught | [`03-pitfalls.md`](03-pitfalls.md) |
 | **how an AI agent should run a job like this** | [`04-agent-playbook.md`](04-agent-playbook.md) |
 | the commands and the numbers they must produce | [`05-reproduce.md`](05-reproduce.md) |
-| what is not proved and must not be claimed | [`06-boundaries.md`](06-boundaries.md) |
+| what is not proved here | [`06-boundaries.md`](06-boundaries.md) |
 
 ### Prerequisites for reading the code
 
@@ -228,7 +228,7 @@ ETP 还公开发布了一个生成的反驳文件目录 `equational_theories/Gen
 | 在被抓住之前曾产出错误答案的 11 个坑 | [`03-pitfalls.md`](03-pitfalls.md) |
 | **AI Agent 该怎样把这类活干成** | [`04-agent-playbook.md`](04-agent-playbook.md) |
 | 复现命令与它们必须产出的数字 | [`05-reproduce.md`](05-reproduce.md) |
-| 没证明什么、不许声称什么 | [`06-boundaries.md`](06-boundaries.md) |
+| 哪些没在这里证明 | [`06-boundaries.md`](06-boundaries.md) |
 
 ### 读代码的前提
 

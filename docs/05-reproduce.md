@@ -3,7 +3,7 @@
 > **中文摘要**
 > 从零到 264/264 的全部命令，每步给出「必须出现的数字」作为校验点；`$ETP_HOME`、`$WORKSPACE`、`$LEAN_HOME` 三个占位符的含义见下表。
 > 主路径只需 Python 3 标准库，最快一条命令 2.3 秒出 264/264；Lean 编译是可选的独立证据，约 7 分钟。
-> 任何一步的数字对不上，就说明上游那步错了——按顺序往回查，不要跳步。
+> 任何一步的数字对不上，就说明上游那步错了——按顺序往回查。
 
 ---
 
@@ -107,8 +107,8 @@ open cells: (677,255) (2910,47)
 If your 1062-side finitely-refutable count is 452 instead of 450, you counted the two
 `unknown` cells — see [`03-pitfalls.md`](03-pitfalls.md) §1.
 
-The 790 figure is **not** reproduced by anything here: it is `parsimagma`'s own
-reported number (411 + 379). What this repository checks is the arithmetic around it:
+The 790 figure comes from `parsimagma` itself (411 + 379) and is not re-measured here.
+What this repository checks is the arithmetic around it:
 `940 − 264 = 676`, `790 − 676 = 114`, `940 + 790 − 676 = 1054`. Those three must hold
 against the pair lists in [`coverage_arithmetic.json`](../data/coverage_arithmetic.json).
 
@@ -168,8 +168,8 @@ per file: exit 0, 10 to 22 s across the two runs, dominated by decideFin!
 **Checkpoints.** 31 files; every `exit` is 0; every `first_error` is `null`; total time
 between 300 s and 500 s on a laptop-class machine.
 
-**What this does not show:** this is not `lake build`, not CI, not review. See
-[`06-boundaries.md`](06-boundaries.md).
+**Scope of this check:** individual file compilations, not a `lake build`, not CI, not a
+maintainer review. See [`06-boundaries.md`](06-boundaries.md).
 
 ## 6. Self-checks on the repository itself
 
@@ -181,9 +181,8 @@ python3 scripts/selfcheck.py --root .                   # BOM, links, checksums
 
 **Expected:** `SELFTEST: PASS`, `HITS: 0 (clean)`, `SELFCHECK: PASS`.
 
-The scanner reads no deny file: identifiers are passed as `--deny "a,b"` on the
-command line, so nothing sensitive is ever written to disk. If you fork this and add
-your own checks, keep that property.
+The scanner takes identifiers only from the command line, as `--deny "a,b"`, so no
+sensitive string is written to disk.
 
 ## 7. Rebuilding the Lean files must not change them
 
